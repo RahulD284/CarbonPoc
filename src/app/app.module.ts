@@ -8,6 +8,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { GridModule } from 'carbon-components-angular';
 import { LoginComponent } from './login/login.component';
 import { DashbaordComponent } from './dashbaord/dashbaord.component';
+import { UIShellModule } from 'carbon-components-angular';
+import { IconModule } from 'carbon-components-angular';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { DashbaordComponent } from './dashbaord/dashbaord.component';
     ButtonModule,
     FormsModule,
     ReactiveFormsModule  ,
-    GridModule
+    GridModule,
+    UIShellModule,
+    IconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
