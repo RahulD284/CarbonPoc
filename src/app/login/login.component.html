@@ -1,34 +1,36 @@
 <div class="css-grid-story">
-    <div
-      cdsGrid
-      [useCssGrid]="true"
-      [condensed]="true"
-      [narrow]="true"
-      [fullWidth]="true"
-    >
-      <div cdsCol [columnNumbers]="{md: 8}">1</div>
-      <div cdsCol [columnNumbers]="{md: 8}">
-        <div cdsCol [columnNumbers]="{sm: 1 }"class="Login">
-            <div class="login-head">
-                <b>Log In</b>
-                <hr color="#3176B1"/>
-            </div>
-          <cds-text-label>
-            Username
-            <input cdsText type="text" class="input-user-field" placeholder="Enter Username">
+  <div cdsGrid [useCssGrid]="true" [condensed]="true" [narrow]="true" [fullWidth]="true">
+    <div cdsCol [columnNumbers]="{md: 8}" class="BarclaysText">
+      
+        <span class="welcomeText">Welcome to</span>
+        <h2 class="boldText">BARCLAYS</h2>
+        <span class="dummyText">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+    </div>
+    <div cdsCol [columnNumbers]="{md: 8}">
+      <div cdsCol [columnNumbers]="{sm: 1 }" class="Login">
+        <div class="login-head">
+          <b>Log In</b>
+          <hr color="#3176B1" />
+        </div>
+        <cds-text-label>
+          Username
+          <input cdsText type="text" class="input-user-field" placeholder="Enter Username">
         </cds-text-label>
         <cds-password-label class="password_style">
-            Password
-            <input cdsPassword type="password" class="input-password-field" placeholder="Enter Password" />
+          Password
+          <input cdsPassword type="password" class="input-password-field" placeholder="Enter Password" />
         </cds-password-label>
         <div class="button-group">
-            <button cdsButton style="background-color: transparent; color: #3274B1;" > Forgot Password? </button>
-            <button cdsButton size='lg' class="login_button">
-                Log In
-                <svg class="cds--btn__icon" cdsIcon="accessibility--color--filled" size="16"></svg>
-            </button>
-        </div>
+          <button cdsButton style="background-color: transparent; color: #3274B1;"> Forgot Password? </button>
+          <button cdsButton size='lg' class="login_button" (click)="login()">
+            Log In
+            <svg class="cds--btn__icon" cdsIcon="accessibility--color--filled" size="16"></svg>
+          </button>
         </div>
       </div>
     </div>
+    <div cdsCol [columnNumbers]="{md: 8}">
+      <img src="../../assets/pics/logo.png" alt="barclayslogo" class="logo">
+    </div>
   </div>
+</div>
