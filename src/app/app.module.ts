@@ -10,12 +10,16 @@ import { LoginComponent } from './login/login.component';
 import { DashbaordComponent } from './dashbaord/dashbaord.component';
 import { UIShellModule } from 'carbon-components-angular';
 import { IconModule } from 'carbon-components-angular';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    DashbaordComponent
+    DashbaordComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

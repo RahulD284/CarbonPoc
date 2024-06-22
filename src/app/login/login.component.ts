@@ -8,9 +8,9 @@ import { Router } from '@angular/router';
 export class LoginComponent {
   username: string = '';
   password: string = '';
-constructor(public router:Router){}
+  constructor(public router: Router) { }
 
-  login(){
+  login() {
     this.router.navigate(['/dashboard']);
   }
   onSubmit() {
