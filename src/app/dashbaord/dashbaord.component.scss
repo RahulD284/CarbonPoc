@@ -1,12 +1,8 @@
-p {
-    padding: 20px;
-    
-}
 
 .css-grid-story {
     height: 600px;
-    margin-top: 50px;   
-   // width: 100%;
+   margin-top: 24px;  
+   margin-left:16px; 
 }
 
 .lblname {
@@ -16,7 +12,9 @@ p {
     font-family: IBM Plex Sans !important;
     font-weight: 400;
     line-height: 66px;
-    word-wrap: break-word
+    word-wrap: break-word;
+    padding-left: 20px;
+    padding-top: 5px;
 }
 
 .lblbarclays {
@@ -25,7 +23,8 @@ p {
     font-family: IBM Plex Sans !important;
     font-weight: 300;
     line-height: 32px;
-    word-wrap: break-word
+    word-wrap: break-word;
+    padding-left: 20px;
 }
 
 .lblbarclayssub {
@@ -33,14 +32,32 @@ p {
     font-family: IBM Plex Sans;
     font-weight: 400;
     line-height: 28px;
-    word-wrap: break-word
+    word-wrap: break-word;
+    padding-left: 20px;
 }
 
-.colsection{
+.colsection1{
 background: white;
 height: 10rem;
 position: relative;
-//width: 684px;
-//height: 570px;
 padding: 16px;
+margin-right: 10px;
+margin-left: 25px;
 }  
+.colsection2{
+    background: white;
+    height: 10rem;
+    position: relative;
+    padding: 16px;
+    margin-right: 25px;
+    }  
+
+.setfirstSection {
+    padding-left: 0px;
+    margin: 0px;
+}
+
+.setserach {
+    width: 15%;
+}
+

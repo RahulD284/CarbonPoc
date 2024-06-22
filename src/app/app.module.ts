@@ -16,6 +16,8 @@ import { CustomerSerachResultComponent } from './dashbaord/customer-serach-resul
 //import { Table } from 'carbon-components-angular/table';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+//import { AddAlt20Module } from '@carbon/icons-angular';
+import { SearchModule } from 'carbon-components-angular';
 
 @NgModule({
   declarations: [
@@ -38,6 +40,7 @@ import { FooterComponent } from './footer/footer.component';
     UIShellModule,
     IconModule,
     BreadcrumbModule,
+    SearchModule
     
   ],
   providers: [],
