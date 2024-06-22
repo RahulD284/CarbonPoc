@@ -41,3 +41,41 @@ p {
         background-color: #3176B1;
     }
 }
+
+.BarclaysText {
+    height: 15rem;
+    border-radius: 1rem;
+    position: relative;
+    width: 684px;
+    height: 570px;
+    padding: 76px 50px;
+    color: var(--Color_Tirtiary, #3176B1);
+    border-radius: 40px;
+    margin-top: 10%;
+    font-family: "IBM Plex Sans" !important;
+    font-style: italic;
+    line-height: normal;
+
+    & .boldText {
+        font-size: 70px;
+        font-weight: 600;
+    }
+
+    & .welcomeText {
+        font-size: 30px;
+        font-weight: 300;
+        margin-left: 10px;
+    }
+
+    & .dummyText {
+        font-size: 20px;
+        font-weight: 300;
+
+    }
+
+}
+
+.logo {
+    margin-left: 2.5rem;
+    height: 80px;
+}
