@@ -10,12 +10,19 @@ import { LoginComponent } from './login/login.component';
 import { DashbaordComponent } from './dashbaord/dashbaord.component';
 import { UIShellModule } from 'carbon-components-angular';
 import { IconModule } from 'carbon-components-angular';
+import { CustomerSearchComponent } from './dashbaord/customer-search/customer-search.component';
+import { BreadcrumbModule } from 'carbon-components-angular';
+import { CustomerSerachResultComponent } from './dashbaord/customer-serach-result/customer-serach-result.component';
+//import { Table } from 'carbon-components-angular/table';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    DashbaordComponent
+    DashbaordComponent,
+    CustomerSearchComponent,
+    CustomerSerachResultComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -23,10 +30,12 @@ import { IconModule } from 'carbon-components-angular';
     InputModule, 
     ButtonModule,
     FormsModule,
-    ReactiveFormsModule  ,
+    ReactiveFormsModule,
     GridModule,
     UIShellModule,
-    IconModule
+    IconModule,
+    BreadcrumbModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
