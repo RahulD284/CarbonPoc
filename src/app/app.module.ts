@@ -10,12 +10,16 @@ import { LoginComponent } from './login/login.component';
 import { DashbaordComponent } from './dashbaord/dashbaord.component';
 import { UIShellModule } from 'carbon-components-angular';
 import { IconModule } from 'carbon-components-angular';
+import { CustomerSearchFormComponent } from './customer-search-form/customer-search-form.component';
+import { RadioModule } from 'carbon-components-angular';
+import { DropdownModule } from 'carbon-components-angular';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    DashbaordComponent
+    DashbaordComponent,
+    CustomerSearchFormComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +30,9 @@ import { IconModule } from 'carbon-components-angular';
     ReactiveFormsModule  ,
     GridModule,
     UIShellModule,
-    IconModule
+    IconModule,
+    RadioModule,
+    DropdownModule
   ],
   providers: [],
   bootstrap: [AppComponent]

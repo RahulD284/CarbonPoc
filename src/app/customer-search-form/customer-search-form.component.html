@@ -1,0 +1,65 @@
+<p>customer-search-form works!</p>
+<div class="main_customer_form_div">
+  <p>Enter one or more of the following search criterion to select your customer.</p>
+  <div class="customer_form">
+    <div class="box_style">
+      <cds-text-label class="label_style">Customer Name</cds-text-label>
+      <input cdsText type="text" class="input-user-field name_input_style" placeholder="Enter Customer Name">
+    </div>
+    <cds-radio-group legend="Customer Name Input Parameter" class="radio_style">
+      <cds-radio value="begins_with" [checked]="true">Begins with</cds-radio>
+      <cds-radio value="ends_with">Ends with</cds-radio>
+      <cds-radio value="contains">Contains</cds-radio>
+    </cds-radio-group>
+
+    <div class="box_style">
+      <cds-text-label class="label_style">Customer System ID</cds-text-label>
+      <input cdsText type="text" class="input-user-field id_input_style" placeholder="Enter Customer System ID">
+    </div>
+
+    <div class="box_style">
+      <cds-text-label class="label_style">Customer Registration Number</cds-text-label>
+      <input cdsText type="text" class="input-user-field regis_input_style" placeholder="Enter Customer Registration Number">
+    </div>
+
+    <div class="box_style">
+      <cds-text-label class="label_style">Customer Status</cds-text-label>
+      <cds-dropdown placeholder="Select Customer Status" class="dropdown_struct">
+        <cds-dropdown-list [items]="dropdownItems"></cds-dropdown-list>
+      </cds-dropdown>
+    </div>
+
+    <div class="box_style">
+        <cds-text-label class="label_style">Customer Class</cds-text-label>
+        <cds-dropdown placeholder="Select Customer Class" class="dropdown_struct">
+          <cds-dropdown-list [items]="dropdownItems"></cds-dropdown-list>
+        </cds-dropdown>
+    </div>
+
+    <div class="box_style">
+        <cds-text-label class="label_style">Sales Team</cds-text-label>
+        <cds-dropdown placeholder="Select Sales Team" class="dropdown_struct">
+          <cds-dropdown-list [items]="dropdownItems"></cds-dropdown-list>
+        </cds-dropdown>
+      </div>
+
+      <div class="box_style">
+        <cds-text-label class="label_style">Relationship Owner</cds-text-label>
+        <cds-dropdown placeholder="Select Relationship Owner" class="dropdown_struct">
+          <cds-dropdown-list [items]="dropdownItems"></cds-dropdown-list>
+        </cds-dropdown>
+      </div>
+
+      <div class="box_style">
+        <cds-text-label class="label_style">Legal Entity</cds-text-label>
+        <cds-dropdown placeholder="Select Legal Entity" class="dropdown_struct">
+          <cds-dropdown-list [items]="dropdownItems"></cds-dropdown-list>
+        </cds-dropdown>
+      </div>
+      <div class="button-group">
+        <button cdsButton class="normal_button_style" > Reset Form </button>
+        <button cdsButton class="normal_button_style" > Cancel </button>
+        <button cdsButton size='lg' class="search_button_style"> Search </button>
+    </div>
+  </div>
+</div>
