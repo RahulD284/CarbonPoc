@@ -14,6 +14,8 @@ import { CustomerSearchComponent } from './dashbaord/customer-search/customer-se
 import { BreadcrumbModule } from 'carbon-components-angular';
 import { CustomerSerachResultComponent } from './dashbaord/customer-serach-result/customer-serach-result.component';
 //import { Table } from 'carbon-components-angular/table';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,8 @@ import { CustomerSerachResultComponent } from './dashbaord/customer-serach-resul
     DashbaordComponent,
     CustomerSearchComponent,
     CustomerSerachResultComponent,
-
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
