@@ -1,9 +1,22 @@
 <app-header> </app-header>
+   
+    <div class="css-grid-story">
+        <div class="firstSection">
+            <div class="lblname">Welcome Justin Pierez</div>
+            <h2 class="lblbarclays">Barclays - Zeus
+            </h2>
+            <span class="lblbarclayssub"> Simple, Better, More balanced... </span>
 
-<div class="css-grid-story"> <button cdsButton (click)="logout()"> Logout </button></div>
+                <div class="flex-grid-story">
+                    <div cdsGrid [useCssGrid]="true" [condensed]="true" [narrow]="true" [fullWidth]="true">
+                        <div class="colsection" cdsCol [columnNumbers]="{md: 8}">col 1</div>
+                        <div class="colsection" cdsCol [columnNumbers]="{md: 8}">col 1</div>
+                    </div>
+                  </div>
+            
 
-
-
-
+        </div>
+    </div>
+    <button cdsButton (click)="logout()"> Logout </button>
 <app-footer> </app-footer>
 
