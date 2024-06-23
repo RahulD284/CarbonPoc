@@ -1,8 +1,7 @@
-
 .css-grid-story {
-    height: 600px;
-   margin-top: 24px;  
-   margin-left:16px; 
+   // height: 600px;
+    margin-top: 24px;
+    margin-left: 16px;
 }
 
 .lblname {
@@ -15,6 +14,7 @@
     word-wrap: break-word;
     padding-left: 20px;
     padding-top: 5px;
+    color: white;
 }
 
 .lblbarclays {
@@ -25,6 +25,7 @@
     line-height: 32px;
     word-wrap: break-word;
     padding-left: 20px;
+    color: white;
 }
 
 .lblbarclayssub {
@@ -34,23 +35,44 @@
     line-height: 28px;
     word-wrap: break-word;
     padding-left: 20px;
+    color: white;
 }
 
-.colsection1{
-background: white;
-height: 10rem;
-position: relative;
-padding: 16px;
-margin-right: 10px;
-margin-left: 25px;
-}  
-.colsection2{
+.colsection1 {
+    background: white;
+    height: 10rem;
+    position: relative;
+    padding: 16px;
+    margin-right: 10px;
+    margin-left: 25px;
+}
+
+.colsection2 {
     background: white;
     height: 10rem;
     position: relative;
     padding: 16px;
     margin-right: 25px;
-    }  
+}
+
+.colsection3 {
+    background: white;
+    height: 15rem;
+    position: relative;
+    padding: 16px;
+    margin-right: 10px;
+    margin-left: 25px;
+    //border:1px solid grey;
+}
+
+.colsection4 {
+    background: white;
+    height: 15rem;
+    position: relative;
+    padding: 16px;
+    //margin-right: 25px;
+    //border:1px solid grey;
+}
 
 .setfirstSection {
     padding-left: 0px;
@@ -59,5 +81,51 @@ margin-left: 25px;
 
 .setserach {
     width: 15%;
+    float: inline-end;
+    margin-top: 5px;
 }
 
+.customerSearchleftGrid {
+    margin-top: 5px;
+}
+
+.customerSearchRightGrid {
+ background: #F4F4F4; 
+ border-radius: 20px;
+ height: 100%;
+}
+
+.custdiv1 {
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+}
+
+.inside {
+    float: inline-end;
+}
+
+.inside1 {
+    padding: 15px;
+}
+
+.inside2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.alignSideNav {
+    padding: 0px;
+}
+
+.frame1 {
+    //border: 1px solid grey; 
+    padding: 5px;
+    background-image: url('../../assets/pics/Frame.png');
+}
+
+.frame2 {
+    //border: 1px solid grey; 
+    padding: 5px;
+    background-image: url('../../assets/pics/Frame2.png');
+}
