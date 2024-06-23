@@ -1,3 +1,4 @@
+<app-header></app-header>
 <div class="secondaryHeader">
     <cds-breadcrumb [noTrailingSlash]="true">
         <cds-breadcrumb-item href="#1">HomePage</cds-breadcrumb-item>
@@ -8,6 +9,12 @@
 <div class="searchBanner">
    <p class="bannerText">CustomerSearch</p>
 </div>
-<div>
-    <app-customer-serach-result></app-customer-serach-result>
+<div *ngIf="!searchSuccess">
+    <app-customer-search-form (dataEvent)="handleDataFromChild($event)"></app-customer-search-form>
+   
 </div>
+<div *ngIf="searchSuccess">
+   <app-customer-serach-result></app-customer-serach-result>
+   
+</div>
+<app-footer></app-footer>

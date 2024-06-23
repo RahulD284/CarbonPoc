@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./customer-search.component.scss']
 })
 export class CustomerSearchComponent {
-
+ public searchSuccess=false;
+  constructor() {
+  
+}
+  handleDataFromChild(data: any) {
+    this.searchSuccess=data;
+    console.log('Data received in parent:', this.searchSuccess);
+}
 }

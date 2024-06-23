@@ -18,6 +18,9 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 //import { AddAlt20Module } from '@carbon/icons-angular';
 import { SearchModule } from 'carbon-components-angular';
+import { RadioModule } from 'carbon-components-angular';
+import { DropdownModule } from 'carbon-components-angular';
+import {CustomerSearchFormComponent} from './dashbaord/customer-search-form/customer-search-form.component'
 
 @NgModule({
   declarations: [
@@ -27,7 +30,8 @@ import { SearchModule } from 'carbon-components-angular';
     CustomerSearchComponent,
     CustomerSerachResultComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    CustomerSearchFormComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +44,9 @@ import { SearchModule } from 'carbon-components-angular';
     UIShellModule,
     IconModule,
     BreadcrumbModule,
-    SearchModule
+    SearchModule,
+    RadioModule,
+    DropdownModule
     
   ],
   providers: [],
