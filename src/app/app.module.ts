@@ -13,13 +13,28 @@ import { IconModule } from 'carbon-components-angular';
 import { CustomerSearchFormComponent } from './customer-search-form/customer-search-form.component';
 import { RadioModule } from 'carbon-components-angular';
 import { DropdownModule } from 'carbon-components-angular';
+<<<<<<< Updated upstream
+=======
+import { TableModule, PaginationModule } from 'carbon-components-angular';
+import {CustomerSearchFormComponent} from './dashbaord/customer-search-form/customer-search-form.component';
+import { AppTableComponent } from './app-table/app-table.component'
+>>>>>>> Stashed changes
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     DashbaordComponent,
+<<<<<<< Updated upstream
     CustomerSearchFormComponent
+=======
+    CustomerSearchComponent,
+    CustomerSerachResultComponent,
+    HeaderComponent,
+    FooterComponent,
+    CustomerSearchFormComponent,
+    AppTableComponent
+>>>>>>> Stashed changes
   ],
   imports: [
     BrowserModule,
@@ -32,8 +47,15 @@ import { DropdownModule } from 'carbon-components-angular';
     UIShellModule,
     IconModule,
     RadioModule,
+<<<<<<< Updated upstream
     DropdownModule
+=======
+    DropdownModule,
+    TableModule,
+    PaginationModule
+>>>>>>> Stashed changes
   ],
+  exports: [AppTableComponent],
   providers: [],
   bootstrap: [AppComponent]
 })

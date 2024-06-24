@@ -1,0 +1,27 @@
+<ibm-table
+  [model]="model"
+  [size]="size"
+  [stickyHeader]="stickyHeader"
+  [skeleton]="skeleton"
+  [enableSingleSelect]="enableSingleSelect"
+  [showSelectionColumn]="showSelectionColumn"
+  [striped]="striped"
+  [sortable]="sortable"
+  [isDataGrid]="isDataGrid">
+  <table>
+    <thead ibmTableHeader>
+      <tr>
+        <th *ngFor="let header of model.header">{{ header.data }}</th>
+      </tr>
+    </thead>
+    <tbody ibmTableBody>
+      <ng-container *ngFor="let row of model.data; let rowIndex = index">
+        <tr (click)="onRowClick(row)" style="cursor: pointer;">
+          <ng-container *ngFor="let item of row">
+            <td>{{ item.data }}</td>
+          </ng-container>
+        </tr>
+      </ng-container>
+    </tbody>
+  </table>
+</ibm-table>

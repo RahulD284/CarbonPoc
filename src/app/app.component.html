@@ -1,1 +1,43 @@
+<<<<<<< Updated upstream
 <router-outlet> </router-outlet>
+=======
+<!-- <ibm-table [model]="model" [size]="'md'">
+  <table>
+    <thead ibmTableHeader>
+      <tr>
+        <th *ngFor="let header of model.header">
+          {{ header.data }}
+        </th>
+      </tr>
+    </thead>
+    <tbody ibmTableBody>
+      <tr *ngFor="let row of model.data">
+        <td *ngFor="let item of row">
+          {{ item.data }}
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</ibm-table>
+
+<ibm-pagination [model]="paginationModel" (selectPage)="onPageChange($event)">
+</ibm-pagination> -->
+<cds-table-container>
+  <cds-table-header>
+    <h4 cdsTableHeaderTitle>hello</h4>
+    <p cdsTableHeaderDescription>hello bros</p>
+  </cds-table-header>
+
+  <app-app-table
+    [model]="model"
+    [stickyHeader]="true"
+    [size]="'md'"
+    [skeleton]="false"
+    [enableSingleSelect]="false"
+    [showSelectionColumn]="true"
+    [striped]="false"
+    [sortable]="false"
+    [isDataGrid]="false">
+  </app-app-table>
+</cds-table-container>
+>>>>>>> Stashed changes
