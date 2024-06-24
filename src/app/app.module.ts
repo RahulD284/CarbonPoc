@@ -13,28 +13,30 @@ import { IconModule } from 'carbon-components-angular';
 import { CustomerSearchFormComponent } from './customer-search-form/customer-search-form.component';
 import { RadioModule } from 'carbon-components-angular';
 import { DropdownModule } from 'carbon-components-angular';
-<<<<<<< Updated upstream
-=======
 import { TableModule, PaginationModule } from 'carbon-components-angular';
-import {CustomerSearchFormComponent} from './dashbaord/customer-search-form/customer-search-form.component';
 import { AppTableComponent } from './app-table/app-table.component'
->>>>>>> Stashed changes
+import { CustomerSearchComponent } from './dashbaord/customer-search/customer-search.component';
+import { BreadcrumbModule } from 'carbon-components-angular';
+import { CustomerSerachResultComponent } from './dashbaord/customer-serach-result/customer-serach-result.component';
+//import { Table } from 'carbon-components-angular/table';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+//import { AddAlt20Module } from '@carbon/icons-angular';
+import { SearchModule } from 'carbon-components-angular';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     DashbaordComponent,
-<<<<<<< Updated upstream
-    CustomerSearchFormComponent
-=======
+    CustomerSearchFormComponent,
     CustomerSearchComponent,
     CustomerSerachResultComponent,
     HeaderComponent,
     FooterComponent,
     CustomerSearchFormComponent,
-    AppTableComponent
->>>>>>> Stashed changes
+    AppTableComponent,
+    CustomerSearchFormComponent,
   ],
   imports: [
     BrowserModule,
@@ -42,18 +44,18 @@ import { AppTableComponent } from './app-table/app-table.component'
     InputModule, 
     ButtonModule,
     FormsModule,
-    ReactiveFormsModule  ,
+    ReactiveFormsModule,
     GridModule,
     UIShellModule,
     IconModule,
     RadioModule,
-<<<<<<< Updated upstream
-    DropdownModule
-=======
     DropdownModule,
     TableModule,
-    PaginationModule
->>>>>>> Stashed changes
+    PaginationModule,
+    BreadcrumbModule,
+    SearchModule,
+    RadioModule,
+    DropdownModule
   ],
   exports: [AppTableComponent],
   providers: [],

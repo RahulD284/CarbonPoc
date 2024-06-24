@@ -1,0 +1,25 @@
+
+<div cdsTheme="white">
+    <cds-header>
+        <cds-hamburger *ngIf="hasHamburger" (click)="expanded($event)"></cds-hamburger>
+        <!-- <cds-header-navigation>
+            <cds-header-item>Catalog</cds-header-item>
+            <cds-header-item isCurrentPage="true">Docs</cds-header-item>
+            <cds-header-item>Support</cds-header-item>
+            <cds-header-menu title="Manage">
+                <cds-header-item>Link 1</cds-header-item>
+                <cds-header-item>Link 2</cds-header-item>
+                <cds-header-item>Link 3</cds-header-item>
+            </cds-header-menu>
+        </cds-header-navigation> -->
+        <cds-header-global>
+            <img class="align-image" src='./assets/pics/logo.png'>
+            <cds-header-action description="action">
+                <svg cdsIcon="fade" size="20"></svg>
+            </cds-header-action>
+            <cds-header-action description="logout">
+                <svg cdsIcon="fade" size="20" (click)="logout()"></svg>
+            </cds-header-action>
+        </cds-header-global>
+    </cds-header>
+</div>

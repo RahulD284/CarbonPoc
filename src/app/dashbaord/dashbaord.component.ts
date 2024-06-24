@@ -12,4 +12,7 @@ export class DashbaordComponent {
   logout(){
     this.router.navigate(['/']);
   }
+  customerSearch(){
+    this.router.navigate(['/customerSearch']);
+  }
 }

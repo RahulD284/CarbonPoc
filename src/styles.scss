@@ -15,4 +15,35 @@ label.cds--label{
     font-weight: 400;
     font-size: 16px;
     color: #14395A;
+    height: 100vh;
+}
+.hedaer-icon{
+    background-image: url('./assets/pics/logo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 18px;
+    max-width: 92px;
+}
+
+.firstSection {  
+    //width: 100%;
+    background-image: url('./assets/pics/BG_image.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    //height: 50%;
+    height: 325px;
+   margin-top: 24px;  
+   margin-left:16px; 
+}
+// .cds--header__name {
+//     a{
+//         color: white !important;
+//     }
+    
+// }
+
+.cds--header__name--prefix {
+    color: white !important;
 }

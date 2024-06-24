@@ -1,3 +1,263 @@
-<p>dashbaord works!</p>
 
-<button cdsButton (click)="logout()"> Logout </button>
+<div class="css-grid-story">
+    <app-header> </app-header>
+    <div class="alignSideNav" cdsTheme="white">
+        <cds-sidenav [expanded]="false">
+            <cds-sidenav-item>
+                <svg cdsIcon="fade" size="16"></svg>
+                Link
+            </cds-sidenav-item>
+            <cds-sidenav-item>
+                <svg cdsIcon="fade" size="16"></svg>
+                Link
+            </cds-sidenav-item>
+            <cds-sidenav-menu title="Category title">
+                <svg cdsIcon="fade" icon size="16"></svg>
+                <cds-sidenav-item>Link</cds-sidenav-item>
+                <cds-sidenav-item>Link</cds-sidenav-item>
+                <cds-sidenav-item>Link</cds-sidenav-item>
+            </cds-sidenav-menu>
+        </cds-sidenav>
+    </div>
+    <div cdsGrid [useCssGrid]="true" [condensed]="false" [narrow]="false" [fullWidth]="true">
+        <div class="setfirstSection" cdsCol [columnNumbers]="{lg: 16}">
+            <div class="firstSection">
+                <div class="lblname">Welcome Justin Pierez</div>
+                <h2 class="lblbarclays">Barclays - Zeus
+                </h2>
+                <span class="lblbarclayssub"> Simple, Better, More balanced... </span>
+
+                <div class="flex-grid-story">
+                    <div cdsGrid [useCssGrid]="true" [condensed]="true" [narrow]="true" [fullWidth]="true">
+                        <div class="colsection1" cdsCol [columnNumbers]="{lg: 8}">
+                            <div cdsGrid [useCssGrid]="true" [condensed]="true" [narrow]="true" [fullWidth]="true">
+
+                                <div cdsCol [columnNumbers]="{md: 4}">
+                                    <div style="display: flex;">
+                                        <div
+                                            style="color: #14395A; font-size: 42px; font-family: IBM Plex Sans; font-weight: 600; line-height: 50px; word-wrap: break-word">
+                                            xX</div>
+                                        <div
+                                            style="color: #14395A; font-size: 42px; font-family: IBM Plex Sans; font-weight: 600; line-height: 50px; word-wrap: break-word; margin-left: 5rem">
+                                            xX</div>
+                                    </div>
+
+                                    <div style="display: flex;">
+                                        <div
+                                            style="color: #14395A; font-size: 16px; font-family: IBM Plex Sans; font-weight: 600; line-height: 24px; word-wrap: break-word">
+                                            Lorem Ipsum</div>
+                                        <div
+                                            style="color: #14395A; font-size: 16px; font-family: IBM Plex Sans; font-weight: 600; line-height: 24px; word-wrap: break-word; margin-left: 2rem">
+                                            Lorem Ipsum</div>
+                                    </div>
+
+                                    <div
+                                        style="width: 100%; height: 100%; color: #14395A; margin-top: 15px; font-size: 14px; font-family: IBM Plex Sans; font-weight: 400; line-height: 20px; letter-spacing: 0.16px; word-wrap: break-word">
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                    </div>
+                                </div>
+
+                                <div class="frame1" cdsCol [columnNumbers]="{md: 4}"></div>
+                            </div>
+                        </div>
+                        <div class="colsection2" cdsCol [columnNumbers]="{lg: 8}">
+                            <div cdsGrid [useCssGrid]="true" [condensed]="true" [narrow]="true" [fullWidth]="true">
+                                <div cdsCol [columnNumbers]="{md: 4}">
+                                    <div style="display: flex;">
+                                        <div
+                                            style="color: #14395A; font-size: 42px; font-family: IBM Plex Sans; font-weight: 600; line-height: 50px; word-wrap: break-word">
+                                            xX</div>
+                                        <div
+                                            style="color: #14395A; font-size: 42px; font-family: IBM Plex Sans; font-weight: 600; line-height: 50px; word-wrap: break-word; margin-left: 5rem">
+                                            xX</div>
+                                    </div>
+
+                                    <div style="display: flex;">
+                                        <div
+                                            style="color: #14395A; font-size: 16px; font-family: IBM Plex Sans; font-weight: 600; line-height: 24px; word-wrap: break-word">
+                                            Lorem Ipsum</div>
+                                        <div
+                                            style="color: #14395A; font-size: 16px; font-family: IBM Plex Sans; font-weight: 600; line-height: 24px; word-wrap: break-word; margin-left: 2rem">
+                                            Lorem Ipsum</div>
+                                    </div>
+
+                                    <div
+                                        style="width: 100%; height: 100%; color: #14395A; margin-top: 15px; font-size: 14px; font-family: IBM Plex Sans; font-weight: 400; line-height: 20px; letter-spacing: 0.16px; word-wrap: break-word">
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                    </div>
+                                </div>
+
+                                <div class="frame2" cdsCol [columnNumbers]="{md: 4}"> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="setserach">
+                <cds-search theme="dark" placeholder="Search in Zeus" autocomplete="true" [disabled]="false" size="md"
+                    [expandable]="false"></cds-search>
+            </div>
+        </div>
+    </div>
+
+    <!--Customer Search Grid START-->
+    <!--Left grid start-->
+    <div class="customerSearchleftGrid" cdsGrid [useCssGrid]="true" [condensed]="true" [narrow]="true"
+        [fullWidth]="true">
+        <div class="colsection3" cdsCol [columnNumbers]="{lg: 6}">
+            <div style="border-left: 5px solid #4CADE9">
+                <div
+                    style="justify-content: center; align-items: center; gap: 10px; display: inline-flex; margin-left: 8px; ">
+                    <div
+                        style="width: 394px; color: #14395A; font-size: 54px; font-family: IBM Plex Sans; font-weight: 300; line-height: 64px; word-wrap: break-word">
+                        Zeus Functionalities</div>
+                </div>
+            </div>
+            <div
+                style="width: 65%;margin-top: 15px; margin-left: 8px; color: #14395A; font-size: 20px; font-family: IBM Plex Sans; font-weight: 400; line-height: 28px; word-wrap: break-word">
+                Select any of the functionalities to explore zeus.</div>
+        </div>
+        <!--Right grid start-->
+        <div class="colsection4 customerSearchRightGrid" cdsCol [columnNumbers]="{lg: 10}">
+            <div
+                style="width: 100%; color: #14395A; font-size: 28px; font-family: IBM Plex Sans; font-weight: 400; line-height: 36px; word-wrap: break-word">
+                Select function</div>
+            <div style="width: 100%; border-top: 0.50px #3274B1 solid"></div>
+
+            <!--Right Inner grid start-->
+            <div class="css-grid-story">
+                <div cdsGrid [useCssGrid]="true" [condensed]="true" [narrow]="true" [fullWidth]="true">
+                   
+                    <div class="custdiv1" cdsCol [columnNumbers]="{sm: 3}">
+                   
+                              <div cdsRow (click)="customerSearch()">
+                                <div cdsCol class="custom-class-example">
+                                  <div class="inside">
+                                    <svg cdsIcon="fade" size="16"></svg>
+                                    <svg cdsIcon="fade" size="16"></svg>
+                                    <svg cdsIcon="fade" size="16"></svg>
+                                  </div>
+                                </div>
+                                <div cdsCol class="custom-class-example">
+                                  <div class="inside1">
+                                    <!-- <svg cdsIcon="add" size="20"></svg> -->
+                                    <img src="../../assets/pics/search.png" alt="search" />
+                                  </div>
+                                </div>
+                                <div cdsCol class="custom-class-example">
+                                  <div class="inside2">
+                                    <div style="color: #14395A; font-size: 20px; font-family: IBM Plex Sans; font-weight: 400; line-height: 28px; word-wrap: break-word">Customer Search</div>
+                                    <svg style="margin-top: 5px;" cdsIcon="add" size="16"></svg>
+                                  </div>
+                                </div>
+                              </div>
+                    </div>
+
+                    <div class="custdiv1" cdsCol [columnNumbers]="{sm: 3}">
+                        <div cdsRow>
+                            <div cdsCol class="custom-class-example">
+                              <div class="inside">
+                                <svg cdsIcon="fade" size="16"></svg>
+                                <svg cdsIcon="fade" size="16"></svg>
+                                <svg cdsIcon="fade" size="16"></svg>
+                              </div>
+                            </div>
+                            <div cdsCol class="custom-class-example">
+                              <div class="inside1">
+                                <img src="../../assets/pics/Mail--all (1).png" alt="mail" />
+                              </div>
+                            </div>
+                            <div cdsCol class="custom-class-example">
+                              <div class="inside2">
+                                <div style="color: #14395A; font-size: 20px; font-family: IBM Plex Sans; font-weight: 400; line-height: 28px; word-wrap: break-word">Inbox</div>
+                                <svg style="margin-top: 5px;" cdsIcon="add" size="16"></svg>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+
+                    <div class="custdiv1" cdsCol [columnNumbers]="{sm: 3}">
+                        <div cdsRow>
+                            <div cdsCol class="custom-class-example">
+                              <div class="inside">
+                                <svg cdsIcon="fade" size="16"></svg>
+                                <svg cdsIcon="fade" size="16"></svg>
+                                <svg cdsIcon="fade" size="16"></svg>
+                              </div>
+                            </div>
+                            <div cdsCol class="custom-class-example">
+                              <div class="inside1">
+                                <img src="../../assets/pics/Piggy-bank.png" alt="piggy" />
+                              </div>
+                            </div>
+                            <div cdsCol class="custom-class-example">
+                              <div class="inside2">
+                                <div style="color: #14395A; font-size: 20px; font-family: IBM Plex Sans; font-weight: 400; line-height: 28px; word-wrap: break-word">Limit Management</div>
+                                <svg style="margin-top: 5px;" cdsIcon="add" size="16"></svg>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+
+                    <div class="custdiv1" cdsCol [columnNumbers]="{sm: 3}">
+                        <div cdsRow>
+                            <div cdsCol class="custom-class-example">
+                              <div class="inside">
+                                <svg cdsIcon="fade" size="16"></svg>
+                                <svg cdsIcon="fade" size="16"></svg>
+                                <svg cdsIcon="fade" size="16"></svg>
+                              </div>
+                            </div>
+                            <div cdsCol class="custom-class-example">
+                              <div class="inside1">
+                                <img src="../../assets/pics/Cloud--monitoring.png" alt="mnc" />
+                              </div>
+                            </div>
+                            <div cdsCol class="custom-class-example">
+                              <div class="inside2">
+                                <div style="color: #14395A; font-size: 20px; font-family: IBM Plex Sans; font-weight: 400; line-height: 28px; word-wrap: break-word">M&C Dairy</div>
+                                <svg style="margin-top: 5px;" cdsIcon="add" size="16"></svg>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+
+                    <div class="custdiv1" cdsCol [columnNumbers]="{sm: 3}">
+                        <div cdsRow>
+                            <div cdsCol class="custom-class-example">
+                              <div class="inside">
+                                <svg cdsIcon="fade" size="16"></svg>
+                                <svg cdsIcon="fade" size="16"></svg>
+                                <svg cdsIcon="fade" size="16"></svg>
+                              </div>
+                            </div>
+                            <div cdsCol class="custom-class-example">
+                              <div class="inside1">
+                                <!-- <svg cdsIcon="add" size="20"></svg> -->
+                                <img src="../../assets/pics/Report.png" alt="report" />
+                              </div>
+                            </div>
+                            <div cdsCol class="custom-class-example">
+                              <div class="inside2">
+                                <div style="color: #14395A; font-size: 20px; font-family: IBM Plex Sans; font-weight: 400; line-height: 28px; word-wrap: break-word">Portfolio Reports</div>
+                                <svg style="margin-top: 5px;" cdsIcon="add" size="16"></svg>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- <div cdsGrid [useCssGrid]="true" [condensed]="true" [narrow]="true" [fullWidth]="true">
+        <div class="colsection1" cdsCol [columnNumbers]="{lg: 16}">
+            <button cdsButton (click)="logout()"> Logout </button>
+            <button cdsButton (click)="customerSearch()">Search </button>
+        </div>
+    </div> -->
+    <app-footer> </app-footer>
+</div>
+
