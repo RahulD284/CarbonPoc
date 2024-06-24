@@ -24,4 +24,8 @@ export class CustomerSearchFormComponent {
   
     this.dataEvent.emit(this.serachSuccess);
   }
+
+  logout() {
+    this.router.navigate(['/dashboard']);
+  }
 }
