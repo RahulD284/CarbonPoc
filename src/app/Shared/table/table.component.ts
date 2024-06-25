@@ -21,7 +21,13 @@ export class TableComponent {
   @Input() skeleton = false;
   @Input() ariaLabelledby = "table";
   @Input() ariaDescribedby = "table";
-  //@Input() itemsPerPageOptions = [10, 20, 30, 40, 50];
+  @Input() itemsPerPageOptions = [10, 20, 30, 40, 50];
+  @Input() get totalDataLength() {
+    return this.model.totalDataLength;
+}
+set totalDataLength(value) {
+    this.model.totalDataLength = value;
+}
 
   constructor(private http: HttpClient) { }
 
@@ -29,7 +35,8 @@ export class TableComponent {
   
   ngOnInit() {
 
-
+    this.model.pageLength = 10;
+    this.model.currentPage = 1;
     this.model.rowsSelectedChange.subscribe(event => console.log(event));
     this.model.selectAllChange.subscribe(event => console.log(event ? "All rows selected!" : "All rows deselected!"));
 
@@ -40,6 +47,13 @@ export class TableComponent {
     }
    
   }
+  selectPage(page:any) {
+    // ... your code to load the page goes here
+    console.log(page);
+    this.model.currentPage = page;
+
+    // ... anything you want to do after page selection changes goes here
+}
 
  
 
