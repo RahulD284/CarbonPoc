@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {
   InputModule, ButtonModule,
-  TableModule, PaginationModule
+  TableModule, PaginationModule, IconService
 } from 'carbon-components-angular';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { GridModule } from 'carbon-components-angular';
@@ -16,13 +16,18 @@ import { IconModule } from 'carbon-components-angular';
 import { CustomerSearchComponent } from './dashbaord/customer-search/customer-search.component';
 import { BreadcrumbModule } from 'carbon-components-angular';
 import { CustomerSerachResultComponent } from './dashbaord/customer-serach-result/customer-serach-result.component';
-//import { Table } from 'carbon-components-angular/table';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-//import { AddAlt20Module } from '@carbon/icons-angular';
 import { SearchModule } from 'carbon-components-angular';
 import { RadioModule } from 'carbon-components-angular';
 import { DropdownModule } from 'carbon-components-angular';
+import UserAvatar20 from '@carbon/icons/es/user--avatar/20';
+import Reset20 from '@carbon/icons/es/reset/20';
+import Close20 from '@carbon/icons/es/close/20';
+import ArrowRight20 from '@carbon/icons/es/arrow--right/20';
+import Information20 from '@carbon/icons/es/information/20';
+import PinFilled20 from '@carbon/icons/es/pin--filled/20';
+import Draggable20 from '@carbon/icons/es/draggable/20';
 import {CustomerSearchFormComponent} from './dashbaord/customer-search-form/customer-search-form.component'
 import { HttpClientModule } from '@angular/common/http';
 import { TableComponent } from './Shared/table/table.component';
@@ -60,4 +65,8 @@ import { TableComponent } from './Shared/table/table.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+  constructor(public iconService: IconService){
+    this.iconService.registerAll([UserAvatar20, Reset20, Close20, ArrowRight20, Information20, PinFilled20, Draggable20]);
+  }
+}
