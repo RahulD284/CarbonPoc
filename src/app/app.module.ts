@@ -23,6 +23,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 //import { AddAlt20Module } from '@carbon/icons-angular';
 import { SearchModule } from 'carbon-components-angular';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -55,7 +56,8 @@ import { SearchModule } from 'carbon-components-angular';
     BreadcrumbModule,
     SearchModule,
     RadioModule,
-    DropdownModule
+    DropdownModule,
+    HttpClientModule
   ],
   exports: [AppTableComponent],
   providers: [],
