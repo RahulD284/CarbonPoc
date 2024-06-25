@@ -1,0 +1,9 @@
+.TableTitle{
+    color: var(--Color_Secondary, #14395A);
+/* Non-variable/Fixed heading styles/heading-03 */
+font-family: var(--Fixed-Heading-Heading-03-Font-family, "IBM Plex Sans") !important;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 28px; /* 140% */
+}

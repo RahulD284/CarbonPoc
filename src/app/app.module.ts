@@ -3,7 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { InputModule, ButtonModule } from 'carbon-components-angular';
+import {
+  InputModule, ButtonModule,
+  TableModule, PaginationModule
+} from 'carbon-components-angular';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { GridModule } from 'carbon-components-angular';
 import { LoginComponent } from './login/login.component';
@@ -21,7 +24,8 @@ import { SearchModule } from 'carbon-components-angular';
 import { RadioModule } from 'carbon-components-angular';
 import { DropdownModule } from 'carbon-components-angular';
 import {CustomerSearchFormComponent} from './dashbaord/customer-search-form/customer-search-form.component'
-
+import { HttpClientModule } from '@angular/common/http';
+import { TableComponent } from './Shared/table/table.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +35,8 @@ import {CustomerSearchFormComponent} from './dashbaord/customer-search-form/cust
     CustomerSerachResultComponent,
     HeaderComponent,
     FooterComponent,
-    CustomerSearchFormComponent
+    CustomerSearchFormComponent,
+    TableComponent
   ],
   imports: [
     BrowserModule,
@@ -46,7 +51,10 @@ import {CustomerSearchFormComponent} from './dashbaord/customer-search-form/cust
     BreadcrumbModule,
     SearchModule,
     RadioModule,
-    DropdownModule
+    DropdownModule,
+    TableModule,
+    PaginationModule,
+    HttpClientModule
     
   ],
   providers: [],
