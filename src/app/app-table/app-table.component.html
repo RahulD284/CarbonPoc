@@ -16,7 +16,7 @@
     </thead>
     <tbody ibmTableBody>
       <ng-container *ngFor="let row of model.data; let rowIndex = index">
-        <tr (click)="onRowClick(row)" style="cursor: pointer;">
+        <tr style="cursor: pointer;">
           <ng-container *ngFor="let item of row">
             <td>{{ item.data }}</td>
           </ng-container>
@@ -25,3 +25,14 @@
     </tbody>
   </table>
 </ibm-table>
+<ibm-pagination
+    [model]="paginationModel"
+    [skeleton]="skeleton"
+    [showPageInput]="showPageInput"
+    totalDataLength="paginationModel.totalDataLength"
+    pageLengthOptions="paginationModel.pageLengthOptions" 
+    [pageInputDisabled]="false"
+    (pageSelectChange)="onPageChange($event)"
+    (pageSizeChange)="onPageSizeChange($event)"
+    (selectPage)="selectPage($event)">
+  </ibm-pagination>
