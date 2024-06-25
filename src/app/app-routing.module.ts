@@ -3,6 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { DashbaordComponent } from './dashbaord/dashbaord.component';
 import {CustomerSearchComponent} from './dashbaord/customer-search/customer-search.component'
+import { TableComponent } from './Shared/table/table.component';
+import { CustomerSerachResultComponent } from './dashbaord/customer-serach-result/customer-serach-result.component';
 
 const routes: Routes = [
   {
@@ -16,7 +18,16 @@ const routes: Routes = [
   {
     path:'customerSearch',
     component: CustomerSearchComponent
+  },
+  {
+    path:'app-table',
+    component: TableComponent
+  },
+  {
+    path:'result',
+    component: CustomerSerachResultComponent
   }
+  
 ];
 
 @NgModule({
