@@ -28,6 +28,10 @@ import ArrowRight20 from '@carbon/icons/es/arrow--right/20';
 import Information20 from '@carbon/icons/es/information/20';
 import PinFilled20 from '@carbon/icons/es/pin--filled/20';
 import Draggable20 from '@carbon/icons/es/draggable/20';
+import User20 from '@carbon/icons/es/user/20';
+import Home20 from '@carbon/icons/es/home/20';
+import Email20 from '@carbon/icons/es/email--new/20';
+import Settings20 from '@carbon/icons/es/settings/20';
 import {CustomerSearchFormComponent} from './dashbaord/customer-search-form/customer-search-form.component'
 import { HttpClientModule } from '@angular/common/http';
 import { TableComponent } from './Shared/table/table.component';
@@ -67,6 +71,6 @@ import { TableComponent } from './Shared/table/table.component';
 })
 export class AppModule { 
   constructor(public iconService: IconService){
-    this.iconService.registerAll([UserAvatar20, Reset20, Close20, ArrowRight20, Information20, PinFilled20, Draggable20]);
+    this.iconService.registerAll([Email20,Home20,Settings20,UserAvatar20, Reset20, Close20, ArrowRight20, Information20, PinFilled20, Draggable20, User20]);
   }
 }

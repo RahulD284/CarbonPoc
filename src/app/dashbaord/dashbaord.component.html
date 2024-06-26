@@ -4,15 +4,15 @@
     <div class="alignSideNav" cdsTheme="white">
         <cds-sidenav [expanded]="false">
             <cds-sidenav-item>
-                <svg cdsIcon="fade" size="16"></svg>
+                <svg cdsIcon="settings" size="16"></svg>
                 Link
             </cds-sidenav-item>
             <cds-sidenav-item>
-                <svg cdsIcon="fade" size="16"></svg>
+                <svg cdsIcon="settings" size="16"></svg>
                 Link
             </cds-sidenav-item>
             <cds-sidenav-menu title="Category title">
-                <svg cdsIcon="fade" icon size="16"></svg>
+                <svg cdsIcon="user"  size="16"></svg>
                 <cds-sidenav-item>Link</cds-sidenav-item>
                 <cds-sidenav-item>Link</cds-sidenav-item>
                 <cds-sidenav-item>Link</cds-sidenav-item>
@@ -22,14 +22,14 @@
     <div cdsGrid [useCssGrid]="true" [condensed]="false" [narrow]="false" [fullWidth]="true">
         <div class="setfirstSection" cdsCol [columnNumbers]="{lg: 16}">
             <div class="firstSection">
-                <div class="lblname">Welcome Justin Pierez</div>
-                <h2 class="lblbarclays">Barclays - Zeus
+                <div class="lblname">Welcome</div>
+                <h2 class="lblbarclays">Barclays CB 2.0
                 </h2>
                 <span class="lblbarclayssub"> Simple, Better, More balanced... </span>
 
                 <div class="flex-grid-story">
                     <div cdsGrid [useCssGrid]="true" [condensed]="true" [narrow]="true" [fullWidth]="true">
-                        <div class="colsection1" cdsCol [columnNumbers]="{lg: 8}">
+                        <!-- <div class="colsection1" cdsCol [columnNumbers]="{lg: 8}">
                             <div cdsGrid [useCssGrid]="true" [condensed]="true" [narrow]="true" [fullWidth]="true">
 
                                 <div cdsCol [columnNumbers]="{md: 4}">
@@ -59,8 +59,8 @@
 
                                 <div class="frame1" cdsCol [columnNumbers]="{md: 4}"></div>
                             </div>
-                        </div>
-                        <div class="colsection2" cdsCol [columnNumbers]="{lg: 8}">
+                        </div> -->
+                        <!-- <div class="colsection2" cdsCol [columnNumbers]="{lg: 8}">
                             <div cdsGrid [useCssGrid]="true" [condensed]="true" [narrow]="true" [fullWidth]="true">
                                 <div cdsCol [columnNumbers]="{md: 4}">
                                     <div style="display: flex;">
@@ -89,7 +89,7 @@
 
                                 <div class="frame2" cdsCol [columnNumbers]="{md: 4}"> </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -134,9 +134,9 @@
                               <div cdsRow (click)="customerSearch()">
                                 <div cdsCol class="custom-class-example">
                                   <div class="inside">
-                                    <svg cdsIcon="information" size="20"></svg>
-                                    <svg cdsIcon="pin--filled" size="20"></svg>
-                                    <svg cdsIcon="draggable" size="20"></svg>
+                                    <svg class="custom-icon" cdsIcon="information" size="20"></svg>
+                                    <svg class="custom-icon" cdsIcon="pin--filled" size="20"></svg>
+                                    <svg class="custom-icon" cdsIcon="draggable"   size="20"></svg>
                                   </div>
                                 </div>
                                 <div cdsCol class="custom-class-example">
@@ -148,7 +148,7 @@
                                 <div cdsCol class="custom-class-example">
                                   <div class="inside2">
                                     <div style="color: #14395A; font-size: 20px; font-family: IBM Plex Sans; font-weight: 400; line-height: 28px; word-wrap: break-word">Customer Search</div>
-                                    <svg style="margin-top: 5px;" cdsIcon="add" size="16"></svg>
+                                    <svg class="right_arrow" cdsIcon="arrow--right" size="20"></svg>
                                   </div>
                                 </div>
                               </div>
@@ -158,9 +158,9 @@
                         <div cdsRow>
                             <div cdsCol class="custom-class-example">
                               <div class="inside">
-                                <svg cdsIcon="fade" size="16"></svg>
-                                <svg cdsIcon="fade" size="16"></svg>
-                                <svg cdsIcon="fade" size="16"></svg>
+                                <svg class="custom-icon" cdsIcon="information" size="20"></svg>
+                                <svg class="custom-icon" cdsIcon="pin--filled" size="20"></svg>
+                                <svg class="custom-icon" cdsIcon="draggable" size="20"></svg>
                               </div>
                             </div>
                             <div cdsCol class="custom-class-example">
@@ -171,7 +171,7 @@
                             <div cdsCol class="custom-class-example">
                               <div class="inside2">
                                 <div style="color: #14395A; font-size: 20px; font-family: IBM Plex Sans; font-weight: 400; line-height: 28px; word-wrap: break-word">Inbox</div>
-                                <svg style="margin-top: 5px;" cdsIcon="add" size="16"></svg>
+                                <svg class="right_arrow" cdsIcon="arrow--right" size="20"></svg>
                               </div>
                             </div>
                           </div>
@@ -181,9 +181,9 @@
                         <div cdsRow>
                             <div cdsCol class="custom-class-example">
                               <div class="inside">
-                                <svg cdsIcon="fade" size="16"></svg>
-                                <svg cdsIcon="fade" size="16"></svg>
-                                <svg cdsIcon="fade" size="16"></svg>
+                                <svg class="custom-icon" cdsIcon="information" size="20"></svg>
+                                <svg class="custom-icon" cdsIcon="pin--filled" size="20"></svg>
+                                <svg class="custom-icon" cdsIcon="draggable" size="20"></svg>
                               </div>
                             </div>
                             <div cdsCol class="custom-class-example">
@@ -194,7 +194,7 @@
                             <div cdsCol class="custom-class-example">
                               <div class="inside2">
                                 <div style="color: #14395A; font-size: 20px; font-family: IBM Plex Sans; font-weight: 400; line-height: 28px; word-wrap: break-word">Limit Management</div>
-                                <svg style="margin-top: 5px;" cdsIcon="add" size="16"></svg>
+                                <svg class="right_arrow" cdsIcon="arrow--right" size="20"></svg>
                               </div>
                             </div>
                           </div>
@@ -204,9 +204,9 @@
                         <div cdsRow>
                             <div cdsCol class="custom-class-example">
                               <div class="inside">
-                                <svg cdsIcon="fade" size="16"></svg>
-                                <svg cdsIcon="fade" size="16"></svg>
-                                <svg cdsIcon="fade" size="16"></svg>
+                                <svg class="custom-icon" cdsIcon="information" size="20"></svg>
+                                <svg class="custom-icon" cdsIcon="pin--filled" size="20"></svg>
+                                <svg class="custom-icon" cdsIcon="draggable" size="20"></svg>
                               </div>
                             </div>
                             <div cdsCol class="custom-class-example">
@@ -217,7 +217,7 @@
                             <div cdsCol class="custom-class-example">
                               <div class="inside2">
                                 <div style="color: #14395A; font-size: 20px; font-family: IBM Plex Sans; font-weight: 400; line-height: 28px; word-wrap: break-word">M&C Dairy</div>
-                                <svg style="margin-top: 5px;" cdsIcon="add" size="16"></svg>
+                                <svg class="right_arrow" cdsIcon="arrow--right" size="20"></svg>
                               </div>
                             </div>
                           </div>
@@ -227,9 +227,9 @@
                         <div cdsRow>
                             <div cdsCol class="custom-class-example">
                               <div class="inside">
-                                <svg cdsIcon="fade" size="16"></svg>
-                                <svg cdsIcon="fade" size="16"></svg>
-                                <svg cdsIcon="fade" size="16"></svg>
+                                <svg class="custom-icon" cdsIcon="information" size="20"></svg>
+                                <svg class="custom-icon" cdsIcon="pin--filled" size="20"></svg>
+                                <svg class="custom-icon" cdsIcon="draggable" size="20"></svg>
                               </div>
                             </div>
                             <div cdsCol class="custom-class-example">
@@ -241,7 +241,7 @@
                             <div cdsCol class="custom-class-example">
                               <div class="inside2">
                                 <div style="color: #14395A; font-size: 20px; font-family: IBM Plex Sans; font-weight: 400; line-height: 28px; word-wrap: break-word">Portfolio Reports</div>
-                                <svg style="margin-top: 5px;" cdsIcon="add" size="16"></svg>
+                                <svg class="right_arrow" cdsIcon="arrow--right" size="20"></svg>
                               </div>
                             </div>
                           </div>

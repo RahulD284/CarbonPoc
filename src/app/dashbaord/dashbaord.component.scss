@@ -99,6 +99,13 @@
     background-color: white;
     padding: 10px;
     margin: 10px;
+    border: 2px solid transparent; 
+}
+
+.custdiv1:hover {
+    cursor: pointer;
+   // background-color: grey;
+   border-color: #3176B1;
 }
 
 .inside {
@@ -120,13 +127,13 @@
 }
 
 .frame1 {
-    //border: 1px solid grey; 
+    background-repeat: no-repeat;
     padding: 5px;
     background-image: url('../../assets/pics/Frame.png');
 }
 
 .frame2 {
-    //border: 1px solid grey; 
+    background-repeat: no-repeat;
     padding: 5px;
     background-image: url('../../assets/pics/Frame2.png');
 }
@@ -137,3 +144,14 @@
     margin-top: 50px;
     margin-bottom: 50px;
 }
+
+.custom-icon {
+    fill: #14395A;
+    margin: 2px;
+}
+
+.right_arrow {
+    fill: #3176B1;
+    margin-right: 11px;
+}
+

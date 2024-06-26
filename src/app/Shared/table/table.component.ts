@@ -24,15 +24,13 @@ export class TableComponent {
   @Input() itemsPerPageOptions = [10, 20, 30, 40, 50];
   @Input() get totalDataLength() {
     return this.model.totalDataLength;
-}
-set totalDataLength(value) {
+  }
+  set totalDataLength(value) {
     this.model.totalDataLength = value;
-}
+  }
 
   constructor(private http: HttpClient) { }
 
-
-  
   ngOnInit() {
 
     this.model.pageLength = 10;
@@ -45,20 +43,15 @@ set totalDataLength(value) {
       //this.model.data = this.dataset;
       this.loadTableData();
     }
-   
+
   }
-  selectPage(page:any) {
+  selectPage(page: any) {
     // ... your code to load the page goes here
     console.log(page);
     this.model.currentPage = page;
 
     // ... anything you want to do after page selection changes goes here
-}
-
- 
-
- 
- 
+  }
 
   loadTableData() {
     this.http.get<any>('assets/data.json').subscribe(data => {
