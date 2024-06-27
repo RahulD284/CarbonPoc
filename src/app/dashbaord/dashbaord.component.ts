@@ -3,7 +3,7 @@ import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-dashbaord',
-  templateUrl: './dashbaord.component.html',
+  templateUrl: './dashboard.component.html',
   styleUrls: ['./dashbaord.component.scss']
 })
 export class DashbaordComponent {
