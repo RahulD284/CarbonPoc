@@ -13,9 +13,9 @@ import { LoginComponent } from './login/login.component';
 import { DashbaordComponent } from './dashbaord/dashbaord.component';
 import { UIShellModule } from 'carbon-components-angular';
 import { IconModule } from 'carbon-components-angular';
-import { CustomerSearchComponent } from './dashbaord/customer-search/customer-search.component';
+//import { CustomerSearchComponent } from './dashbaord/customer-search/customer-search.component';
 import { BreadcrumbModule } from 'carbon-components-angular';
-import { CustomerSerachResultComponent } from './dashbaord/customer-serach-result/customer-serach-result.component';
+//import { CustomerSerachResultComponent } from './dashbaord/customer-serach-result/customer-serach-result.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { SearchModule } from 'carbon-components-angular';
@@ -33,7 +33,7 @@ import Home20 from '@carbon/icons/es/home/20';
 import Email20 from '@carbon/icons/es/email--new/20';
 import Settings20 from '@carbon/icons/es/settings/20';
 import Notification20 from '@carbon/icons/es/notification/20';
-import {CustomerSearchFormComponent} from './dashbaord/customer-search-form/customer-search-form.component'
+//import {CustomerSearchFormComponent} from './dashbaord/customer-search-form/customer-search-form.component'
 import { HttpClientModule } from '@angular/common/http';
 import { TableComponent } from './Shared/table/table.component';
 import { SearchFormComponent } from './dashbaord/search-form/search-form.component';
@@ -47,11 +47,11 @@ import { PortfolioReportsComponent } from './dashbaord/portfolio-reports/portfol
     AppComponent,
     LoginComponent,
     DashbaordComponent,
-    CustomerSearchComponent,
-    CustomerSerachResultComponent,
+    //CustomerSearchComponent,
+    //CustomerSerachResultComponent,
     HeaderComponent,
     FooterComponent,
-    CustomerSearchFormComponent,
+    //CustomerSearchFormComponent,
     TableComponent,
     SearchFormComponent,
     SearchResultsComponent,
