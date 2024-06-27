@@ -94,12 +94,13 @@
 
 .zeusfunlabel {
     width: 394px;
-    display: contents;
+    display: flex;
+    flex-direction: column;
     color: #14395A;
     font-size: 3vw;
     font-family: IBM Plex Sans;
     font-weight: 300;
-    line-height: 64px;
+    line-height: 62px;
     word-wrap: break-word;
 }
 

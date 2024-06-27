@@ -6,15 +6,14 @@
             <div cdsCol [columnNumbers]="{sm: {start: 1, end: 5},
             md: {start: 2, end: 9},
             lg: {start: 2, end: 16}}">
-            <p class="bannerText">Customer Search Result</p>
-        </div>
+                <p class="bannerText">Customer Search Result</p>
+            </div>
         </div>
 
     </div>
     <div cdsCol [columnNumbers]="{sm: 4, md: 8, lg: 16}" class="breadCrumb">
         <cds-breadcrumb [noTrailingSlash]="true">
             <cds-breadcrumb-item href="/dashboard">HomePage</cds-breadcrumb-item>
-
             <cds-breadcrumb-item href="/customerSearchForm">Customer Search </cds-breadcrumb-item>
             <cds-breadcrumb-item [current]="true" href="#3">Customer Search Result</cds-breadcrumb-item>
         </cds-breadcrumb>
@@ -27,6 +26,9 @@
                 <h4 cdsTableHeaderTitle class="TableTitle">{{title}}</h4>
                 <p cdsTableHeaderDescription>{{description}}</p>
             </cds-table-header>
+
+
+
             <!-- CDS Table Start -->
             <cds-table [model]="model" [size]="size" [skeleton]="skeleton" [showSelectionColumn]="showSelectionColumn"
                 [enableSingleSelect]="enableSingleSelect" [sortable]="sortable" [stickyHeader]="stickyHeader"
@@ -34,6 +36,8 @@
                 [ariaDescribedby]="ariaDescribedby">
 
             </cds-table>
+
+
             <cds-pagination [model]="model" (selectPage)="selectPage($event)"></cds-pagination>
         </cds-table-container>
     </div>

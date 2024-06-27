@@ -32,11 +32,16 @@ import User20 from '@carbon/icons/es/user/20';
 import Home20 from '@carbon/icons/es/home/20';
 import Email20 from '@carbon/icons/es/email--new/20';
 import Settings20 from '@carbon/icons/es/settings/20';
+import Notification20 from '@carbon/icons/es/notification/20';
 import {CustomerSearchFormComponent} from './dashbaord/customer-search-form/customer-search-form.component'
 import { HttpClientModule } from '@angular/common/http';
 import { TableComponent } from './Shared/table/table.component';
 import { SearchFormComponent } from './dashbaord/search-form/search-form.component';
 import { SearchResultsComponent } from './dashbaord/search-results/search-results.component';
+import { InboxComponent } from './dashbaord/inbox/inbox.component';
+import { LimitManagementComponent } from './dashbaord/limit-management/limit-management.component';
+import { DairyComponent } from './dashbaord/dairy/dairy.component';
+import { PortfolioReportsComponent } from './dashbaord/portfolio-reports/portfolio-reports.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -49,7 +54,11 @@ import { SearchResultsComponent } from './dashbaord/search-results/search-result
     CustomerSearchFormComponent,
     TableComponent,
     SearchFormComponent,
-    SearchResultsComponent
+    SearchResultsComponent,
+    InboxComponent,
+    LimitManagementComponent,
+    DairyComponent,
+    PortfolioReportsComponent
   ],
   imports: [
     BrowserModule,
@@ -76,6 +85,6 @@ import { SearchResultsComponent } from './dashbaord/search-results/search-result
 })
 export class AppModule { 
   constructor(public iconService: IconService){
-    this.iconService.registerAll([Email20,Home20,Settings20,UserAvatar20, Reset20, Close20, ArrowRight20, Information20, PinFilled20, Draggable20, User20]);
+    this.iconService.registerAll([Notification20,Email20,Home20,Settings20,UserAvatar20, Reset20, Close20, ArrowRight20, Information20, PinFilled20, Draggable20, User20]);
   }
 }

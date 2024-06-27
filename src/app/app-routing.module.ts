@@ -7,7 +7,10 @@ import { TableComponent } from './Shared/table/table.component';
 import { CustomerSerachResultComponent } from './dashbaord/customer-serach-result/customer-serach-result.component';
 import { SearchFormComponent } from './dashbaord/search-form/search-form.component';
 import { SearchResultsComponent } from './dashbaord/search-results/search-results.component';
-
+import { InboxComponent } from './dashbaord/inbox/inbox.component';
+import { DairyComponent } from './dashbaord/dairy/dairy.component';
+import { LimitManagementComponent } from './dashbaord/limit-management/limit-management.component';
+import { PortfolioReportsComponent } from './dashbaord/portfolio-reports/portfolio-reports.component';
 
 const routes: Routes = [
   {
@@ -33,6 +36,22 @@ const routes: Routes = [
   {
     path:'customerSearchForm',
     component: SearchFormComponent
+  },
+  {
+    path:'inbox',
+    component: InboxComponent
+  },
+  {
+    path:'dairy',
+    component: DairyComponent
+  },
+  {
+    path:'limitManagement',
+    component: LimitManagementComponent
+  },
+  {
+    path:'portfolioReports',
+    component: PortfolioReportsComponent
   }
 ];
 
