@@ -35,8 +35,8 @@ import Settings20 from '@carbon/icons/es/settings/20';
 import {CustomerSearchFormComponent} from './dashbaord/customer-search-form/customer-search-form.component'
 import { HttpClientModule } from '@angular/common/http';
 import { TableComponent } from './Shared/table/table.component';
-
-
+import { SearchFormComponent } from './dashbaord/search-form/search-form.component';
+import { SearchResultsComponent } from './dashbaord/search-results/search-results.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -47,7 +47,9 @@ import { TableComponent } from './Shared/table/table.component';
     HeaderComponent,
     FooterComponent,
     CustomerSearchFormComponent,
-    TableComponent
+    TableComponent,
+    SearchFormComponent,
+    SearchResultsComponent
   ],
   imports: [
     BrowserModule,

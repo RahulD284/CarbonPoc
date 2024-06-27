@@ -1,0 +1,101 @@
+.searchBanner{
+    width:100%;
+    height:80px;
+    background-image: url(../../../assets/pics/BG_image.png);
+    margin-top: 3rem;
+    align-items: center;
+    }
+    .breadCrumb{
+        margin-top: 6px;
+        margin-bottom: 12px;
+    }
+    .bannerText{
+        text-align: start;
+      
+        color: var(--Text-text-on-color, #FFF);
+    
+    font-family: "IBM Plex Sans" !important;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 4.5rem;
+    }
+
+    .main_customer_form_div {
+        margin-left: 20px;
+        width: 850px;
+        height: 600px;
+        padding-left: 160px;
+        padding-top: 8px;
+      }
+      .main_text{
+        color: var(--Text-text-secondary, #525252);
+        font-family: var(--Fixed-Body-Font-family, "IBM Plex Sans") !important;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 25px;
+      } 
+      .box_style {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 14px;
+        margin-bottom: 14px;
+      }
+      .dropdown_struct {
+        width: 39vw;
+      }
+       
+  .radio_style {
+    margin-left: 15vw;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+      
+      
+      .label_style {
+        width: 25vw;
+        margin-right: 10px;
+      & .label_text_style{
+        color: var(--Color_Secondary, #14395A);
+        font-family: var(--Fixed-Body-Font-family, "IBM Plex Sans") !important;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        }
+    }
+        .normal_button_style {
+            background-color: transparent; 
+            color: #3274B1;
+            margin: 10px;
+            border: 1px solid #3176B1 !important;
+            width: 28%;
+        }
+        .search_button_style{
+            width: auto;
+            background-color: #3176B1;
+            margin: 10px;
+            width: 28%;
+        }
+        .reset_icon  {
+            margin-right: -50px;
+            fill: #3274B1;
+          }
+          .cross_icon{
+            margin-right: -50px;
+            fill: #3274B1;
+          }
+          .right_arrow {
+            margin-right: -50px;
+            fill: white;
+          }
+          .cds--css-grid {
+           
+            max-inline-size: 107rem !important; 
+             padding-inline: 0 !important; 
+        }
+        .FormGrid{
+            margin-bottom: 29px;
+        }

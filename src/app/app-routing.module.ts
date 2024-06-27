@@ -5,6 +5,8 @@ import { DashbaordComponent } from './dashbaord/dashbaord.component';
 import {CustomerSearchComponent} from './dashbaord/customer-search/customer-search.component'
 import { TableComponent } from './Shared/table/table.component';
 import { CustomerSerachResultComponent } from './dashbaord/customer-serach-result/customer-serach-result.component';
+import { SearchFormComponent } from './dashbaord/search-form/search-form.component';
+import { SearchResultsComponent } from './dashbaord/search-results/search-results.component';
 
 
 const routes: Routes = [
@@ -25,8 +27,12 @@ const routes: Routes = [
     component: TableComponent
   },
   {
-    path:'result',
-    component: CustomerSerachResultComponent
+    path:'customerSearchResult',
+    component: SearchResultsComponent
+  },
+  {
+    path:'customerSearchForm',
+    component: SearchFormComponent
   }
 ];
 

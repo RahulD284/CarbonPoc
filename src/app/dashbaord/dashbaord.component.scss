@@ -7,10 +7,10 @@
 .lblname {
     //width: 100%;
     //font-size: 28px;
-    font-size: 22px;
+    font-size: 20px;
     font-family: IBM Plex Sans !important;
     font-weight: 400;
-    line-height: 66px;
+   // line-height: 66px;
     word-wrap: break-word;
     padding-left: 20px;
     padding-top: 5px;
@@ -19,7 +19,7 @@
 
 .lblbarclays {
     //font-size: 54px;
-    font-size: 36px;
+    font-size: 30px;
     font-family: IBM Plex Sans !important;
     font-weight: 300;
     line-height: 32px;
@@ -29,7 +29,7 @@
 }
 
 .lblbarclayssub {
-    font-size: 14px;
+    font-size: 12px;
     font-family: IBM Plex Sans;
     font-weight: 400;
     line-height: 28px;
@@ -203,3 +203,4 @@
     fill: #3176B1;
     margin-right: 11px;
 }
+

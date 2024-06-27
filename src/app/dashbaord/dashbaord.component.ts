@@ -13,6 +13,6 @@ export class DashbaordComponent {
     this.router.navigate(['/']);
   }
   customerSearch(){
-    this.router.navigate(['/customerSearch']);
+    this.router.navigate(['/customerSearchForm']);
   }
 }

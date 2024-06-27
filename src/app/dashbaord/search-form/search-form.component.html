@@ -1,0 +1,106 @@
+<app-header></app-header>
+<div cdsGrid [useCssGrid]="true" [condensed]="true" [narrow]="true" [fullWidth]="false" class="FormGrid">
+
+    <div cdsCol [columnNumbers]="{sm: 4, md: 8, lg: 16}" class="searchBanner">
+
+        <div cdsGrid [useCssGrid]="true" [condensed]="true" [narrow]="true" [fullWidth]="true">
+            <div cdsCol [columnNumbers]="{sm: {start: 1, end: 5},
+            md: {start: 2, end: 9},
+            lg: {start: 4, end: 16}}">
+                <p class="bannerText">CustomerSearch</p>
+            </div>
+        </div>
+
+
+    </div>
+    <div cdsCol [columnNumbers]="{sm: 4, md: 8, lg: 16}" class="breadCrumb">
+        <cds-breadcrumb [noTrailingSlash]="true">
+            <cds-breadcrumb-item href="/dashboard">HomePage</cds-breadcrumb-item>
+
+            <cds-breadcrumb-item [current]="true" href="#2">CustomerSearch</cds-breadcrumb-item>
+        </cds-breadcrumb>
+
+    </div>
+
+    <div cdsCol [columnNumbers]="{sm: {start: 2, end: 4},
+    md: {start: 2, end: 8},
+    lg: {start: 4, end: 10}}">
+
+    <div class="box_style">
+        <cds-text-label class="label_style">
+            <span class="label_text_style">Enter one or more of the following search criterion to select your
+                customer.</span></cds-text-label>
+                </div>
+        <div class="box_style">
+            <cds-text-label class="label_style">
+                <span class="label_text_style">Customer Name</span></cds-text-label>
+            <input cdsText type="text" class="input-user-field name_input_style" placeholder="Enter Customer Name">
+        </div>
+        <div class="box_style">
+            <cds-radio-group legend="Customer Name Input Parameter" class="radio_style">
+                <cds-radio value="begins_with" [checked]="true">Begins with</cds-radio>
+                <cds-radio value="ends_with">Ends with</cds-radio>
+                <cds-radio value="contains">Contains</cds-radio>
+            </cds-radio-group>
+        </div>
+        <div class="box_style">
+            <cds-text-label class="label_style">
+                <span class="label_text_style">Customer System ID</span></cds-text-label>
+            <input cdsText type="text" class="input-user-field id_input_style" placeholder="Enter Customer System ID">
+        </div>
+        <div class="box_style">
+            <cds-text-label class="label_style">
+                <span class="label_text_style">Customer Registration Number</span></cds-text-label>
+            <input cdsText type="text" class="input-user-field regis_input_style"
+                placeholder="Enter Customer Registration Number">
+        </div>
+        <div class="box_style">
+            <cds-text-label class="label_style">
+                <span class="label_text_style">Customer Status</span></cds-text-label>
+            <cds-dropdown placeholder="Select Customer Status" class="dropdown_struct">
+                <cds-dropdown-list [items]="dropdownItems"></cds-dropdown-list>
+            </cds-dropdown>
+        </div>
+        <div class="box_style">
+            <cds-text-label class="label_style">
+                <span class="label_text_style">Customer Class</span></cds-text-label>
+            <cds-dropdown placeholder="Select Customer Class" class="dropdown_struct">
+                <cds-dropdown-list [items]="dropdownItems"></cds-dropdown-list>
+            </cds-dropdown>
+        </div>
+        <div class="box_style">
+            <cds-text-label class="label_style">
+                <span class="label_text_style">Sales Team</span></cds-text-label>
+            <cds-dropdown placeholder="Select Sales Team" class="dropdown_struct">
+                <cds-dropdown-list [items]="dropdownItems"></cds-dropdown-list>
+            </cds-dropdown>
+        </div>
+        <div class="box_style">
+            <cds-text-label class="label_style">
+                <span class="label_text_style">Relationship Owner</span></cds-text-label>
+            <cds-dropdown placeholder="Select Relationship Owner" class="dropdown_struct">
+                <cds-dropdown-list [items]="dropdownItems"></cds-dropdown-list>
+            </cds-dropdown>
+        </div>
+        <div class="box_style">
+            <cds-text-label class="label_style">
+                <span class="label_text_style">Legal Entity</span></cds-text-label>
+            <cds-dropdown placeholder="Select Legal Entity" class="dropdown_struct">
+                <cds-dropdown-list [items]="dropdownItems"></cds-dropdown-list>
+            </cds-dropdown>
+        </div>
+        <div cdsCol [columnNumbers]="{sm: {start: 2, end: 4},
+        md: {start: 2, end: 8},
+        lg: {start: 5, end: 10}}">
+            <button cdsButton class="normal_button_style"> Reset Form
+                <svg class="reset_icon" cdsIcon="reset" size="20"></svg></button>
+            <button cdsButton class="normal_button_style" (click)="logout()"> Cancel <svg class="cross_icon"
+                    cdsIcon="close" size="20"></svg>
+            </button>
+            <button cdsButton class="search_button_style" (click)="submitSearch()"> Search <svg class="right_arrow"
+                    cdsIcon="arrow--right" size="20"></svg> </button>
+        </div>
+    </div>
+
+</div>
+<app-footer> </app-footer>
