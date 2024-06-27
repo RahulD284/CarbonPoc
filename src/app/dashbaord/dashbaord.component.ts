@@ -15,4 +15,16 @@ export class DashbaordComponent {
   customerSearch(){
     this.router.navigate(['/customerSearchForm']);
   }
+  goToInbox() {
+    this.router.navigate(['/inbox']);
+  }
+  goToDairy() {
+    this.router.navigate(['/dairy']);
+  }
+  goTolimit() {
+    this.router.navigate(['/limitManagement']);
+  }
+  goToPortfolio() {
+    this.router.navigate(['/portfolioReports']);
+  }
 }

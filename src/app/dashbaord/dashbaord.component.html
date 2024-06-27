@@ -6,10 +6,7 @@
                 <svg cdsIcon="settings" size="16"></svg>
                 Link
             </cds-sidenav-item>
-            <!-- <cds-sidenav-item>
-                <svg cdsIcon="settings" size="16"></svg>
-                Link
-            </cds-sidenav-item> -->
+    
             <cds-sidenav-menu title="Category title">
                 <svg cdsIcon="fade" size="16"></svg>
                 <cds-sidenav-item>Link</cds-sidenav-item>
@@ -90,7 +87,7 @@
                     </div>
 
                     <div class="custdiv1" cdsCol [columnNumbers]="{sm: 4}">
-                        <div cdsRow>
+                        <div cdsRow (click)="goToInbox()">
                             <div cdsCol class="custom-class-example">
                                 <div class="inside">
                                     <svg class="custom-icon" cdsIcon="information" size="20"></svg>
@@ -115,7 +112,7 @@
                     </div>
 
                     <div class="custdiv1" cdsCol [columnNumbers]="{sm: 4}">
-                        <div cdsRow>
+                        <div cdsRow (click)="goTolimit()">
                             <div cdsCol class="custom-class-example">
                                 <div class="inside">
                                     <svg class="custom-icon" cdsIcon="information" size="20"></svg>
@@ -140,7 +137,7 @@
                     </div>
 
                     <div class="custdiv1" cdsCol [columnNumbers]="{sm: 4}">
-                        <div cdsRow>
+                        <div cdsRow (click)="goToDairy()">
                             <div cdsCol class="custom-class-example">
                                 <div class="inside">
                                     <svg class="custom-icon" cdsIcon="information" size="20"></svg>
@@ -165,7 +162,7 @@
                     </div>
 
                     <div class="custdiv1" cdsCol [columnNumbers]="{sm: 4}">
-                        <div cdsRow>
+                        <div cdsRow (click)="goToPortfolio()">
                             <div cdsCol class="custom-class-example">
                                 <div class="inside">
                                     <svg class="custom-icon" cdsIcon="information" size="20"></svg>
