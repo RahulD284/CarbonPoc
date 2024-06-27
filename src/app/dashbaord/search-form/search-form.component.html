@@ -6,14 +6,16 @@
         <div cdsGrid [useCssGrid]="true" [condensed]="true" [narrow]="true" [fullWidth]="true">
             <div cdsCol [columnNumbers]="{sm: {start: 1, end: 5},
             md: {start: 2, end: 9},
-            lg: {start: 4, end: 16}}">
+            lg: {start: 2, end: 16}}">
                 <p class="bannerText">Customer Search</p>
             </div>
         </div>
 
 
     </div>
-    <div cdsCol [columnNumbers]="{sm: 4, md: 8, lg: 16}" class="breadCrumb">
+    <div cdsCol [columnNumbers]="{sm: {start: 2, end: 4},
+    md: {start: 2, end: 8},
+    lg: {start: 2, end: 10}}" class="breadCrumb">
         <cds-breadcrumb [noTrailingSlash]="true">
             <cds-breadcrumb-item href="/dashboard">HomePage</cds-breadcrumb-item>
 
@@ -24,7 +26,7 @@
 
     <div cdsCol [columnNumbers]="{sm: {start: 2, end: 4},
     md: {start: 2, end: 8},
-    lg: {start: 4, end: 10}}">
+    lg: {start: 2, end: 10}}">
 
     <div class="box_style">
         <cds-text-label class="label_style">
