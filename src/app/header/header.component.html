@@ -1,21 +1,19 @@
 
-<div cdsTheme="white">
-    <cds-header name="Barclays Zeus">
+<div cdsTheme="g100">
+    <cds-header name="Barclays CB 2.0" [route]="['/dashboard']">
         <cds-hamburger *ngIf="hasHamburger" (click)="expanded($event)"></cds-hamburger>
         <cds-header-navigation>
 			<cds-header-item routerLink="/customerSearch">Customer Search</cds-header-item>
 			<cds-header-item>Inbox</cds-header-item>
 			<cds-header-item>Limit Management</cds-header-item>
             <cds-header-item>M&C Dairy</cds-header-item>
-            <cds-header-item>Portfolio Reports</cds-header-item>
-			<!-- <cds-header-menu title="Manage">
-				<cds-header-item routerLink="link1">Link 1</cds-header-item>
-				<cds-header-item>Link 2</cds-header-item>
-				<cds-header-item>Link 3</cds-header-item>
-			</cds-header-menu> -->
+			<cds-header-menu title="Portfolio Reports">
+				<cds-header-item >Option 1</cds-header-item>
+				<cds-header-item>Option 2</cds-header-item>
+				<cds-header-item>Option 3</cds-header-item>
+			</cds-header-menu> 
 		</cds-header-navigation>
         <cds-header-global>
-            <!-- <img class="align-image" src='./assets/pics/logo.png'> -->
             <cds-header-action description="action">
                 <svg cdsIcon="settings" size="20"></svg>
             </cds-header-action>

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,12 +8,10 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 })
 export class AppComponent {
   title = 'carbonPoc'; 
-  condensed:boolean = true;
-  fullWidth:boolean = true;
-  narrow:boolean = true;
+  showHeaderFooter:boolean = false;
 
 
-  constructor(private fb: FormBuilder) { }
+  constructor(private fb: FormBuilder,public router: Router) { }
 
   ngOnInit(): void {
     this.fb.group({

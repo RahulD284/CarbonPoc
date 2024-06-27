@@ -1,5 +1,5 @@
 .css-grid-story {
-   // height: 600px;
+    // height: 600px;
     margin-top: 24px;
     margin-left: 16px;
 }
@@ -57,7 +57,7 @@
 
 .colsection3 {
     background: white;
-    height: 15rem;
+    // height: 15rem;
     position: relative;
     padding: 16px;
     margin-right: 10px;
@@ -67,11 +67,19 @@
 
 .colsection4 {
     background: white;
-    height: 15rem;
+    // height: 15rem;
     position: relative;
-    padding: 16px;
+    //  padding: 16px;
     //margin-right: 25px;
     //border:1px solid grey;
+}
+
+.zeusAlign {
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    display: inline-flex;
+    margin-left: 8px;
 }
 
 .setfirstSection {
@@ -80,32 +88,73 @@
 }
 
 .setserach {
-    width: 15%;
     float: inline-end;
     margin-top: 5px;
 }
 
+.zeusfunlabel {
+    width: 394px;
+    display: contents;
+    color: #14395A;
+    font-size: 3vw;
+    font-family: IBM Plex Sans;
+    font-weight: 300;
+    line-height: 64px;
+    word-wrap: break-word;
+}
+
+.selectfunction {
+    width: 100%;
+    color: #14395A;
+    font-size: 28px;
+    font-family: IBM Plex Sans;
+    font-weight: 400;
+    line-height: 36px;
+    word-wrap: "break-word"
+}
+
+.selFunBorder {
+    border-top: 0.50px #3274B1 solid;
+}
+
+.zeuslabel {
+    margin-top: 15px;
+    margin-left: 15px;
+    color: #14395A;
+    font-size: 20px;
+    font-family: IBM Plex Sans;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.zeusBorder {
+    border-left: 5px solid #4CADE9;
+    margin-left: 17px;
+}
+
 .customerSearchleftGrid {
-    margin-top: 5px;
+    margin-top: 15px;
 }
 
 .customerSearchRightGrid {
- background: #F4F4F4; 
- border-radius: 20px;
- height: 100%;
+    background: #F4F4F4;
+    border-radius: 20px;
+    padding: 2%;
+    // margin-left: 40%;
+    // height: 100%;
 }
 
 .custdiv1 {
     background-color: white;
     padding: 10px;
     margin: 10px;
-    border: 2px solid transparent; 
+    border: 2px solid transparent;
 }
 
 .custdiv1:hover {
     cursor: pointer;
-   // background-color: grey;
-   border-color: #3176B1;
+    // background-color: grey;
+    border-color: #3176B1;
 }
 
 .inside {
@@ -123,7 +172,7 @@
 }
 
 .alignSideNav {
-    padding: 0px;
+    //  padding: 0px;
 }
 
 .frame1 {
@@ -138,10 +187,10 @@
     background-image: url('../../assets/pics/Frame2.png');
 }
 
-.cds--side-nav__navigation{
+.cds--side-nav__navigation {
     display: flex;
     flex-direction: column;
-    margin-top: 50px;
+    margin-top: 48px;
     margin-bottom: 50px;
 }
 
@@ -154,4 +203,3 @@
     fill: #3176B1;
     margin-right: 11px;
 }
-

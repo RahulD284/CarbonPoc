@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {
   InputModule, ButtonModule,
-  TableModule, PaginationModule, IconService
+  TableModule, PaginationModule, IconService, ThemeModule
 } from 'carbon-components-angular';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { GridModule } from 'carbon-components-angular';
@@ -35,6 +35,8 @@ import Settings20 from '@carbon/icons/es/settings/20';
 import {CustomerSearchFormComponent} from './dashbaord/customer-search-form/customer-search-form.component'
 import { HttpClientModule } from '@angular/common/http';
 import { TableComponent } from './Shared/table/table.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -63,7 +65,8 @@ import { TableComponent } from './Shared/table/table.component';
     DropdownModule,
     TableModule,
     PaginationModule,
-    HttpClientModule
+    HttpClientModule,
+    ThemeModule
     
   ],
   providers: [],
