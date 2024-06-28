@@ -19,7 +19,7 @@ export class DashbaordComponent {
     this.router.navigate(['/inbox']);
   }
   goToDairy() {
-    this.router.navigate(['/dairy']);
+    this.router.navigate(['/diary']);
   }
   goTolimit() {
     this.router.navigate(['/limitManagement']);

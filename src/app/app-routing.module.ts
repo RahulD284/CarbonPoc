@@ -38,7 +38,7 @@ const routes: Routes = [
     component: InboxComponent
   },
   {
-    path:'dairy',
+    path:'diary',
     component: DairyComponent
   },
   {
