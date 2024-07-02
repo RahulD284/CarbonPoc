@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import graphOptions from '../Shared/graph/graphOptions';
+import graphData from '../Shared/graph/graphData';
 
 @Component({
   selector: 'app-dashbaord',
@@ -7,6 +9,8 @@ import { Router } from '@angular/router';
   styleUrls: ['./dashbaord.component.scss']
 })
 export class DashbaordComponent {
+  options = graphOptions;
+	data = graphData;
   constructor(public router:Router){}
 
   logout(){

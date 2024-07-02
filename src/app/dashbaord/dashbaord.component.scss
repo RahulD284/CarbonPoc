@@ -88,7 +88,7 @@
 }
 
 .setserach {
-    float: inline-end;
+   // float: inline-end;
     margin-top: 5px;
 }
 
@@ -135,6 +135,12 @@
 
 .customerSearchleftGrid {
     margin-top: 15px;
+}
+
+.frameBackground {
+    background: #F4F4F4;
+    border-radius: 10px;
+    padding: 2%; 
 }
 
 .customerSearchRightGrid {
@@ -205,3 +211,6 @@
     margin-right: 11px;
 }
 
+.cds--cc--chart-wrapper .fill-5-1-1 {
+    fill: #0a0a0a !important;
+}

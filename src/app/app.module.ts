@@ -35,13 +35,14 @@ import Settings20 from '@carbon/icons/es/settings/20';
 import Notification20 from '@carbon/icons/es/notification/20';
 //import {CustomerSearchFormComponent} from './dashbaord/customer-search-form/customer-search-form.component'
 import { HttpClientModule } from '@angular/common/http';
-import { TableComponent } from './Shared/table/table.component';
 import { SearchFormComponent } from './dashbaord/search-form/search-form.component';
 import { SearchResultsComponent } from './dashbaord/search-results/search-results.component';
 import { InboxComponent } from './dashbaord/inbox/inbox.component';
 import { LimitManagementComponent } from './dashbaord/limit-management/limit-management.component';
 import { DairyComponent } from './dashbaord/dairy/dairy.component';
 import { PortfolioReportsComponent } from './dashbaord/portfolio-reports/portfolio-reports.component';
+import { ChartsModule } from '@carbon/charts-angular';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -52,7 +53,6 @@ import { PortfolioReportsComponent } from './dashbaord/portfolio-reports/portfol
     HeaderComponent,
     FooterComponent,
     //CustomerSearchFormComponent,
-    TableComponent,
     SearchFormComponent,
     SearchResultsComponent,
     InboxComponent,
@@ -77,7 +77,8 @@ import { PortfolioReportsComponent } from './dashbaord/portfolio-reports/portfol
     TableModule,
     PaginationModule,
     HttpClientModule,
-    ThemeModule
+    ThemeModule,
+    ChartsModule
     
   ],
   providers: [],

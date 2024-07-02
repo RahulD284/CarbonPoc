@@ -1,12 +1,12 @@
 <app-header> </app-header>
-<div class="css-grid-story">
+<!-- <div class="css-grid-story">
     <div class="alignSideNav" cdsTheme="white">
         <cds-sidenav [expanded]="false">
             <cds-sidenav-item>
                 <svg cdsIcon="settings" size="16"></svg>
                 Link
             </cds-sidenav-item>
-    
+
             <cds-sidenav-menu title="Category title">
                 <svg cdsIcon="fade" size="16"></svg>
                 <cds-sidenav-item>Link</cds-sidenav-item>
@@ -15,18 +15,33 @@
             </cds-sidenav-menu>
         </cds-sidenav>
     </div>
-</div>
+</div> -->
 
 
 <div cdsGrid [useCssGrid]="true" [condensed]="true" [narrow]="true" [fullWidth]="true">
     <div cdsCol [columnNumbers]="{'sm': 4, 'md': 8, 'lg': 16}">
-        <div class="firstSection">
-            <div class="lblname">Welcome</div>
-            <h2 class="lblbarclays">Barclays CB 2.0
-            </h2>
-            <span class="lblbarclayssub"> Simple, Better, More balanced... </span>
-        </div>
+
+
+      
+            <div class="firstSection">
+                <div class="lblname">Welcome</div>
+                <h2 class="lblbarclays">Barclays CB 2.0
+                </h2>
+                <span class="lblbarclayssub"> Simple, Better, More balanced... </span>
+                <div style="padding: 0 1rem 2rem 2rem;" cdsGrid [useCssGrid]="true" [condensed]="true" [narrow]="true" [fullWidth]="true">
+                    <div class="frameBackground"  style="padding-right: 10px; margin:2px" cdsCol [columnNumbers]="{'sm': 2, 'md': 4, 'lg':8}">
+                        <ibm-simple-bar-chart [data]="data" [options]="options"></ibm-simple-bar-chart>
+                    </div>
+                    <div class="frameBackground"  style="padding-left: 10px; margin:2px" cdsCol [columnNumbers]="{'sm': 2, 'md': 4, 'lg': 8}">
+                        <ibm-stacked-area-chart [data]="data" [options]="options"></ibm-stacked-area-chart>
+                    </div>
+                </div>
+            </div>
+            
+        
+        
     </div>
+    <!-- <ibm-area-chart [data]="data" [options]="options"></ibm-area-chart> -->
 
     <div class="setserach" cdsCol [columnNumbers]="{
         sm: {span: 1, start: 4},
@@ -45,8 +60,8 @@
                 <div class="zeusBorder">
                     <div class="zeusAlign">
                         <div class="zeusfunlabel">
-                          <span> CB 2.0 </span>
-                          <span> Functionalities </span> 
+                            <span> CB 2.0 </span>
+                            <span> Functionalities </span>
                         </div>
                     </div>
                 </div>

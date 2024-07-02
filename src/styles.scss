@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @use "@carbon/styles";
+@import '@carbon/charts/styles.css';
 *{
     font-family: "IBM Plex Sans" !important;
 }
@@ -28,7 +29,7 @@
     //height: 50%;
    // height: 325px;
     margin-top: 24px;  
-    height:87px;
+    height:430px;
    //margin-left:46px; 
 }
 // .cds--header__name {
@@ -42,3 +43,6 @@
     //color: rgb(0, 0, 0) !important;
     display: none;
 }
+// .cds--cc--chart-wrapper .fill-5-1-1 {
+//     fill: #ea30d1 !important;
+// }
