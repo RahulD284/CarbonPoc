@@ -91,9 +91,10 @@
                 <cds-dropdown-list [items]="dropdownItems"></cds-dropdown-list>
             </cds-dropdown>
         </div>
+        <div cdsGrid [useCssGrid]="true" [condensed]="true" [narrow]="true" [fullWidth]="true">
         <div cdsCol [columnNumbers]="{sm: {start: 2, end: 4},
         md: {start: 2, end: 8},
-        lg: {start: 5, end: 10}}">
+        lg: {start: 6, end: 17}}" class="buttonLayout">
             <button cdsButton class="normal_button_style"> Reset Form
                 <svg class="reset_icon" cdsIcon="reset" size="20"></svg></button>
             <button cdsButton class="normal_button_style" (click)="logout()"> Cancel <svg class="cross_icon"
@@ -101,6 +102,7 @@
             </button>
             <button cdsButton class="search_button_style" (click)="submitSearch()"> Search <svg class="right_arrow"
                     cdsIcon="arrow--right" size="20"></svg> </button>
+        </div>
         </div>
     </div>
 

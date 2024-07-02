@@ -70,15 +70,15 @@
         .normal_button_style {
             background-color: transparent; 
             color: #3274B1;
-            margin: 10px;
+            margin: 9px;
             border: 1px solid #3176B1 !important;
-            width: 28%;
+            width: 31%;
         }
         .search_button_style{
             width: auto;
             background-color: #3176B1;
-            margin: 10px;
-            width: 28%;
+            margin: 9px;
+            width: 30%;
         }
         .reset_icon  {
             margin-right: -50px;
@@ -99,4 +99,7 @@
         }
         .FormGrid{
             margin-bottom: 29px;
+        }
+        .buttonLayout{
+          display: flex;
         }
