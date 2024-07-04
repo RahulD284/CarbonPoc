@@ -45,6 +45,11 @@ export class SearchResultsComponent {
     }
 
   }
+
+  onRowClick(index: number) {
+		console.log("Row item selected:", index);
+	}
+  
   selectPage(page: any) {
     // ... your code to load the page goes here
     console.log(page);

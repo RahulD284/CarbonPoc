@@ -28,11 +28,11 @@
                 <h2 class="lblbarclays">Barclays CB 2.0
                 </h2>
                 <span class="lblbarclayssub"> Simple, Better, More balanced... </span>
-                <div style="padding: 0 1rem 2rem 2rem;" cdsGrid [useCssGrid]="true" [condensed]="true" [narrow]="true" [fullWidth]="true">
-                    <div class="frameBackground"  style="padding-right: 10px; margin:2px" cdsCol [columnNumbers]="{'sm': 2, 'md': 4, 'lg':8}">
+                <div class="frameGrid" cdsGrid [useCssGrid]="true" [condensed]="true" [narrow]="true" [fullWidth]="true">
+                    <div class="frameBackground"  style="padding-right: 10px; margin:12px" cdsCol [columnNumbers]="{'sm': 2, 'md': 4, 'lg':8}">
                         <ibm-simple-bar-chart [data]="data" [options]="options"></ibm-simple-bar-chart>
                     </div>
-                    <div class="frameBackground"  style="padding-left: 10px; margin:2px" cdsCol [columnNumbers]="{'sm': 2, 'md': 4, 'lg': 8}">
+                    <div class="frameBackground"  style="padding-left: 10px; margin:12px" cdsCol [columnNumbers]="{'sm': 2, 'md': 4, 'lg': 8}">
                         <ibm-stacked-area-chart [data]="data" [options]="options"></ibm-stacked-area-chart>
                     </div>
                 </div>
