@@ -19,11 +19,11 @@
           </div>
           <cds-text-label>
             Username
-            <input cdsText type="text" class="input-user-field" placeholder="Enter Username">
+            <input cdsText type="text" [(ngModel)]="username" class="input-user-field" placeholder="Enter Username">
           </cds-text-label>
           <cds-password-label class="password_style">
             Password
-            <input cdsPassword type="password" class="input-password-field" placeholder="Enter Password" />
+            <input cdsPassword type="password" [(ngModel)]="password"  class="input-password-field" placeholder="Enter Password" />
           </cds-password-label>
           <div class="button-group">
             <button cdsButton style="background-color: transparent; color: #3274B1;"> Forgot Password? </button>

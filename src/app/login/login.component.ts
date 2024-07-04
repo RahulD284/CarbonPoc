@@ -11,7 +11,15 @@ export class LoginComponent {
   constructor(public router: Router) { }
 
   login() {
-    this.router.navigate(['/dashboard']);
+    if(this.username == 'RD') {
+      this.router.navigate(['/dashboard']);
+      localStorage.setItem('RD','RDUser')
+    }
+    else {
+      localStorage.setItem('RM','RMUser')
+      this.router.navigate(['/dashboard']);
+    }
+   // this.router.navigate(['/dashboard']);
   }
   onSubmit() {
     console.log('Username:', this.username);

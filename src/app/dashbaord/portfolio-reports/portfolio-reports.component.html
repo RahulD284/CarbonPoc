@@ -1,3 +1,18 @@
 <app-header></app-header>
-<p>portfolio-reports works!</p>
+<div class="frameGrid1" cdsGrid [useCssGrid]="true" [condensed]="true" [narrow]="true" [fullWidth]="true">
+    <div class="frameBackground"  style="padding-right: 10px; margin:12px" cdsCol [columnNumbers]="{'sm': 2, 'md': 4, 'lg':8}">
+        <ibm-donut-chart  [data]="data" [options]="options"></ibm-donut-chart >
+    </div>
+    <div class="frameBackground"  style="padding-left: 10px; margin:12px" cdsCol [columnNumbers]="{'sm': 2, 'md': 4, 'lg': 8}">
+        <ibm-pie-chart [data]="data" [options]="options"></ibm-pie-chart>
+    </div>
+</div>
+<div class="frameGrid2" cdsGrid [useCssGrid]="true" [condensed]="true" [narrow]="true" [fullWidth]="true">
+    <div class="frameBackground"  style="padding-right: 10px; margin:12px" cdsCol [columnNumbers]="{'sm': 2, 'md': 4, 'lg':8}">
+        <ibm-bullet-chart [data]="data" [options]="options"></ibm-bullet-chart >
+    </div>
+    <div class="frameBackground"  style="padding-left: 10px; margin:12px" cdsCol [columnNumbers]="{'sm': 2, 'md': 4, 'lg': 8}">
+        <ibm-boxplot-chart [data]="data" [options]="options"></ibm-boxplot-chart>
+    </div>
+</div>
 <app-footer></app-footer>

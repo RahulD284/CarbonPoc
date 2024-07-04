@@ -1,5 +1,5 @@
 export default {
-    title: 'RM User Data',
+    title: 'RD User Data',
     axes: {
       left: {
         mapsTo: 'value'

@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import graphOptions from '../Shared/graph/graphOptions';
 import graphData from '../Shared/graph/graphData';
+import graphRDOptions from '../Shared/graph/graphOptionsRD';
+import graphRDData from '../Shared/graph/graphRD';
 
 @Component({
   selector: 'app-dashbaord',
@@ -9,9 +11,21 @@ import graphData from '../Shared/graph/graphData';
   styleUrls: ['./dashbaord.component.scss']
 })
 export class DashbaordComponent {
-  options = graphOptions;
-	data = graphData;
+  options:any;
+	data:any;
   constructor(public router:Router){}
+
+  ngOnInit() {
+    if(localStorage.getItem('RD') == "RDUser") {
+      console.log("This is RD User");
+      this.options = graphRDOptions;
+      this.data = graphRDData;
+    }
+    else {
+      this.options = graphOptions;
+      this.data = graphData;
+    }
+  }
 
   logout(){
     this.router.navigate(['/']);
