@@ -29,7 +29,10 @@ export class SearchResultsComponent {
   set totalDataLength(value) {
     this.model.totalDataLength = value;
   }
-
+  searchValue = "";
+  displayedCountries = ["BB PLC","BB","Lead",
+    "Associate"
+  ];
   constructor(private http: HttpClient) { }
   ngOnInit() {
 
@@ -43,6 +46,19 @@ export class SearchResultsComponent {
       //this.model.data = this.dataset;
       this.loadTableData();
     }
+    this.model.isRowFiltered = (index: number) => {
+			const nodeName = this.model.row(index)[0].data;
+      const legalEntity = this.model.row(index)[1].data;
+      const address =this.model.row(index)[2].data;
+      const countryName = this.model.row(index)[1].data;
+      const RecordType = this.model.row(index)[7].data;
+			return (!nodeName.toLowerCase().includes(this.searchValue.toLowerCase())
+      && !legalEntity.toLowerCase().includes(this.searchValue.toLowerCase())
+      && !address.toLowerCase().includes(this.searchValue.toLowerCase())) 
+
+      || (!this.displayedCountries.includes(countryName) || !this.displayedCountries.includes(RecordType))
+      ;
+		};
 
   }
 
@@ -66,4 +82,19 @@ export class SearchResultsComponent {
       this.model.data = data.data.map((row: any[]) => row.map(item => new TableItem({ data: item })));
     });
   }
+  filterNodeNames(searchString: string) {
+		this.searchValue = searchString;
+	}
+  filterCountries(countryName: any, checked: any) {
+		if (checked) {
+			this.displayedCountries.push(countryName);
+		} else {
+			this.displayedCountries.splice(this.displayedCountries.indexOf(countryName), 1);
+		}
+	}
+  
+  overflowOnClick = (event: any) => {
+		event.stopPropagation();
+	}
+
 }

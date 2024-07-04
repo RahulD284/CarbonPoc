@@ -23,13 +23,30 @@
     </div>
     <div cdsCol [columnNumbers]="{sm: {start: 1, end: 5},
     md: {start: 1, end: 8},
-    lg: {start: 2, end: 16}}"><cds-table-container class="tablecontainer">
+    lg: {start: 2, end: 16}}">
+    <cds-table-container class="tablecontainer">
             <cds-table-header>
                 <h4 cdsTableHeaderTitle class="TableTitle">{{title}}</h4>
                 <p cdsTableHeaderDescription>{{description}}</p>
             </cds-table-header>
 
-
+            <cds-table-toolbar>
+                <cds-table-toolbar-content>
+                    <cds-table-toolbar-search
+                        [expandable]="true"
+                        (valueChange)="filterNodeNames($event)"
+                        (clear)="searchValue = ''">
+                    </cds-table-toolbar-search>
+                    <button
+                        cdsButton
+                        class="toolbar-action filterButton"
+                        placement="bottom"
+                        [cdsOverflowMenu]="templateRef"
+                       >Filter
+                        <svg cdsIcon="filter" size="20" class="cds--toolbar-action__icon filter_icon"></svg>
+                    </button>   
+                </cds-table-toolbar-content>
+            </cds-table-toolbar>
 
             <!-- CDS Table Start -->
             <cds-table [model]="model" [size]="size" [skeleton]="skeleton" [showSelectionColumn]="showSelectionColumn"
@@ -45,3 +62,30 @@
     </div>
 </div>
 <app-footer></app-footer>
+<ng-template #templateRef>
+    <div style="padding: 0 1rem;" (click)="overflowOnClick($event)">
+        <div style="padding-top: 0.5rem; color: grey;">Legal Entity</div>
+        <cds-checkbox
+            [checked]="displayedCountries.includes('BB PLC')"
+            (checkedChange)="filterCountries('BB PLC', $event)">
+            BB PLC
+        </cds-checkbox>
+        <cds-checkbox
+            [checked]="displayedCountries.includes('BB')"
+            (checkedChange)="filterCountries('BB', $event)">
+            BB
+        </cds-checkbox> <div style="padding-top: 0.5rem; color: grey;">Record Type</div>
+        <cds-checkbox
+            [checked]="displayedCountries.includes('Lead')"
+            (checkedChange)="filterCountries('Lead', $event)">
+            Lead
+        </cds-checkbox>
+        <cds-checkbox
+            [checked]="displayedCountries.includes('Associate')"
+            (checkedChange)="filterCountries('Associate', $event)">
+            Associate
+        </cds-checkbox>
+
+      
+    </div>
+</ng-template>
