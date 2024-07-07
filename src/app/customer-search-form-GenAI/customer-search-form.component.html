@@ -1,0 +1,57 @@
+<form [formGroup]="customerSearchForm">  
+    <cds-text-label>Enter one or more of the following search criteria to select your customer.</cds-text-label>  
+    
+    <cds-text-label>Customer Name</cds-text-label>  
+    <input cdsTextInput formControlName="custName" placeholder="Enter customer name" maxlength="30">  
+    
+    <div class="radio-group">  
+      <input type="radio" formControlName="RadioGroupSearch" value="0" id="begin">  
+      <label for="begin">begins with</label>  
+      <input type="radio" formControlName="RadioGroupSearch" value="1" id="end">  
+      <label for="end">ends with</label>  
+      <input type="radio" formControlName="RadioGroupSearch" value="2" id="contain">  
+      <label for="contain">contains</label>  
+    </div>  
+    
+    <cds-text-label>Customer System Id</cds-text-label>  
+    <input cdsTextInput formControlName="custId" placeholder="Enter customer system ID" maxlength="10">  
+    
+    <cds-text-label>Company Registration No</cds-text-label>  
+    <input cdsTextInput formControlName="regNo" placeholder="Enter company registration number">  
+    
+    <cds-text-label>Customer Status</cds-text-label>  
+    <select cdsSelect formControlName="custstatus">  
+      <option value="" disabled selected>Select status</option>  
+      <!-- Add options here -->  
+    </select>  
+    
+    <cds-text-label>Customer Class</cds-text-label>  
+    <select cdsSelect formControlName="custclass">  
+      <option value="" disabled selected>Select class</option>  
+      <!-- Add options here -->  
+    </select>  
+    
+    <cds-text-label>Sales Team</cds-text-label>  
+    <select cdsSelect formControlName="salesteam" >  
+      <option value="" disabled selected>Select sales team</option>  
+      <!-- Add options here -->  
+    </select>  
+    
+    <cds-text-label>Relationship Owner</cds-text-label>  
+    <select cdsSelect formControlName="relowner">  
+      <option value="" disabled selected>Select relationship owner</option>  
+      <!-- Add options here -->  
+    </select>  
+    
+    <cds-text-label>Legal Entity</cds-text-label>  
+    <select cdsSelect formControlName="CustomerTypeCode">  
+      <option value="" disabled selected>Select legal entity</option>  
+      <!-- Add options here -->  
+    </select>  
+    
+    <div class="button-group">  
+      <button cdsButton kind="primary" (click)="doPreSubmit('Search')">Search</button>  
+      <button cdsButton kind="secondary" (click)="clearAll()">Clear</button>  
+    </div>  
+  </form>  
+  

@@ -34,7 +34,6 @@ import Email20 from '@carbon/icons/es/email--new/20';
 import Settings20 from '@carbon/icons/es/settings/20';
 import Notification20 from '@carbon/icons/es/notification/20';
 import Filter from '@carbon/icons/es/filter/20';
-//import {CustomerSearchFormComponent} from './dashbaord/customer-search-form/customer-search-form.component'
 import { HttpClientModule } from '@angular/common/http';
 import { SearchFormComponent } from './dashbaord/search-form/search-form.component';
 import { SearchResultsComponent } from './dashbaord/search-results/search-results.component';
@@ -45,22 +44,21 @@ import { PortfolioReportsComponent } from './dashbaord/portfolio-reports/portfol
 import { ChartsModule } from '@carbon/charts-angular';
 import { CheckboxModule } from 'carbon-components-angular';
 import { DialogModule } from 'carbon-components-angular';
+import {CustomerSearchFormComponent} from './customer-search-form-GenAI/customer-search-form.component'
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     DashbaordComponent,
-    //CustomerSearchComponent,
-    //CustomerSerachResultComponent,
     HeaderComponent,
     FooterComponent,
-    //CustomerSearchFormComponent,
     SearchFormComponent,
     SearchResultsComponent,
     InboxComponent,
     LimitManagementComponent,
     DairyComponent,
-    PortfolioReportsComponent
+    PortfolioReportsComponent,
+    CustomerSearchFormComponent
   ],
   imports: [
     BrowserModule,

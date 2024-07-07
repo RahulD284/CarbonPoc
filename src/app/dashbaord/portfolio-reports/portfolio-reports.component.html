@@ -1,30 +1,25 @@
 <app-header></app-header>
 <div class="frameGrid1" cdsGrid [useCssGrid]="true" [condensed]="true" [narrow]="true" [fullWidth]="true">
-    <div class="frameBackground"  style="padding-right: 10px; margin:12px" cdsCol [columnNumbers]="{'sm': 2, 'md': 4, 'lg':4}">
-        <ibm-donut-chart  [data]="data" [options]="options"></ibm-donut-chart >
+    <div class="frameBackground"  style="padding-right: 10px; margin:12px" cdsCol [columnNumbers]="{'sm': 4, 'md': 8, 'lg':{start: 2, end: 9}}">
+        <ibm-donut-chart  [data]="lastMonthData" [options]="lastMonthOption"></ibm-donut-chart >
     </div>
-    <div class="frameBackground"  style="padding-left: 10px; margin:12px" cdsCol [columnNumbers]="{'sm': 2, 'md': 4, 'lg': 4}">
-        <ibm-pie-chart [data]="data" [options]="options"></ibm-pie-chart>
+    <div class="frameBackground"  style="padding-left: 10px; margin:12px" cdsCol [columnNumbers]="{'sm': 4, 'md': 8, 'lg':{start: 9, end: 16}}">
+        <ibm-pie-chart [data]="CurrentMonthReviewData" [options]="CurrentMonthReviewOption"></ibm-pie-chart>
     </div>
-    <div class="frameBackground"  style="padding-right: 10px; margin:12px" cdsCol [columnNumbers]="{'sm': 2, 'md': 4, 'lg':4}">
-        <ibm-donut-chart  [data]="data" [options]="options"></ibm-donut-chart >
-    </div>
-    <div class="frameBackground"  style="padding-left: 10px; margin:12px" cdsCol [columnNumbers]="{'sm': 2, 'md': 4, 'lg': 4}">
-        <ibm-pie-chart [data]="data" [options]="options"></ibm-pie-chart>
-    </div>
+   
+    
 </div>
 <div class="frameGrid2" cdsGrid [useCssGrid]="true" [condensed]="true" [narrow]="true" [fullWidth]="true">
-    <div class="frameBackground"  style="padding-right: 10px; margin:12px" cdsCol [columnNumbers]="{'sm': 2, 'md': 4, 'lg':4}">
-        <ibm-bullet-chart [data]="data" [options]="options"></ibm-bullet-chart >
+    <div class="frameBackground"  style="padding-right: 10px; margin:12px" cdsCol [columnNumbers]="{'sm': 4, 'md': 8, 'lg':{start: 2, end: 9}}">
+        <!-- carbon bullet chart -->
+        <ibm-grouped-bar-chart [data]="creditdata" [options]="creditOptions"></ibm-grouped-bar-chart>
     </div>
-    <div class="frameBackground"  style="padding-left: 10px; margin:12px" cdsCol [columnNumbers]="{'sm': 2, 'md': 4, 'lg': 4}">
-        <ibm-boxplot-chart [data]="data" [options]="options"></ibm-boxplot-chart>
-    </div>
-    <div class="frameBackground"  style="padding-right: 10px; margin:12px" cdsCol [columnNumbers]="{'sm': 2, 'md': 4, 'lg':4}">
-        <ibm-bullet-chart [data]="data" [options]="options"></ibm-bullet-chart >
-    </div>
-    <div class="frameBackground"  style="padding-left: 10px; margin:12px" cdsCol [columnNumbers]="{'sm': 2, 'md': 4, 'lg': 4}">
-        <ibm-boxplot-chart [data]="data" [options]="options"></ibm-boxplot-chart>
-    </div>
+    <div class="frameBackground"  style="padding-left: 10px; margin:12px" cdsCol [columnNumbers]="{'sm': 4, 'md': 8, 'lg':{start: 9, end: 16}}">
+       <!-- carbon boxplot chart -->
+       <ibm-combo-chart [data]="applicationReviewData" [options]="applicationReviewOption"></ibm-combo-chart>
+       <!-- <ibm-bubble-chart [data]="applicationReviewData" [options]="applicationReviewOption"></ibm-bubble-chart>
+        <ibm-boxplot-chart [data]="applicationReviewData" [options]="applicationReviewOption"></ibm-boxplot-chart> -->
+    </div> 
+   
 </div>
 <app-footer></app-footer>

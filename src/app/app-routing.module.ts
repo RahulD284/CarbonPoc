@@ -10,6 +10,7 @@ import { InboxComponent } from './dashbaord/inbox/inbox.component';
 import { DairyComponent } from './dashbaord/dairy/dairy.component';
 import { LimitManagementComponent } from './dashbaord/limit-management/limit-management.component';
 import { PortfolioReportsComponent } from './dashbaord/portfolio-reports/portfolio-reports.component';
+import { CustomerSearchFormComponent } from './customer-search-form-GenAI/customer-search-form.component';
 
 const routes: Routes = [
   {
@@ -43,6 +44,10 @@ const routes: Routes = [
   {
     path:'portfolioReports',
     component: PortfolioReportsComponent
+  },
+  {
+    path:'customerSearchGenAI',
+    component: CustomerSearchFormComponent
   }
 ];
 
